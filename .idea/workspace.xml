@@ -20,12 +20,28 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+<<<<<<< HEAD
         <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+=======
+        <item name="BRANCH:Projectdefinitie" type="e8cecc67:BranchNodeDescriptor" />
+>>>>>>> Projectdefinitie
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="ad69c8d4-ff65-44b8-9ea6-a3baaf7c8163" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="d5630066-82e5-4578-b0ed-bcc30902f78e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Team-E2-les1.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Use Case Acces Diagram .drawio" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Use Case Acces Diagram .png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/Router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagramen.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.php" afterDir="false" />
+    </list>
+>>>>>>> Projectdefinitie
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,7 +58,11 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
   <component name="ProjectId" id="1hmQf8EYr2dG9Giy8KP5LBH7r6t" />
+=======
+  <component name="ProjectId" id="1hmOD4DyDBTxrLUA9szLNvL3MLv" />
+>>>>>>> Projectdefinitie
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -58,12 +78,21 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="ad69c8d4-ff65-44b8-9ea6-a3baaf7c8163" name="Default Changelist" comment="" />
       <created>1600613889533</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600613889533</updated>
       <workItem from="1600613891693" duration="84000" />
+=======
+      <changelist id="d5630066-82e5-4578-b0ed-bcc30902f78e" name="Default Changelist" comment="" />
+      <created>1600612680727</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600612680727</updated>
+      <workItem from="1600612682175" duration="322000" />
+>>>>>>> Projectdefinitie
     </task>
     <servers />
   </component>
@@ -81,7 +110,11 @@
                   <entry key="branch">
                     <value>
                       <list>
+<<<<<<< HEAD
                         <option value="master" />
+=======
+                        <option value="Projectdefinitie" />
+>>>>>>> Projectdefinitie
                       </list>
                     </value>
                   </entry>
@@ -95,6 +128,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+<<<<<<< HEAD
     <state x="93" y="93" width="1095" height="495" key="DiffContextDialog" timestamp="1600613879466">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -103,5 +137,11 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="93" y="93" width="1095" height="495" key="ShowDiffWithBranchDialog/0.0.1280.680@0.0.1280.680" timestamp="1600613976413" />
+=======
+    <state x="388" y="143" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600612253275">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="388" y="143" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1600612253275" />
+>>>>>>> Projectdefinitie
   </component>
 </project>
