@@ -16,26 +16,26 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
 }
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 
-    if(empty(trim($_POST["gebruikersnaam"]))){
+    if(empty(trim($_POST["username"]))){
         $gebruikersnaam_err = "Voer uw gebruikersnaam in.";
     } else{
-        $gebruikersnaam = trim($_POST["gebruikersnaam"]);
+        $gebruikersnaam = trim($_POST["username"]);
     }
 
-    if(empty(trim($_POST["wachtwoord"]))){
+    if(empty(trim($_POST["password"]))){
         $wachtwoord_err = "Voer uw wachtwoord in.";
     } else{
-        $wachtwoord = trim($_POST["wachtwoord"]);
+        $wachtwoord = trim($_POST["password"]);
     }
 
     if(empty($gebruikersnaam_err) && empty($wachtwoord_err)){
 
+
         $sql = "SELECT id, gebruikersnaam, wachtwoord FROM gebruikers WHERE gebruikersnaam = :gebruikersnaam";
 
         if($stmt = $PDO->prepare($sql)){
-            $stmt->bindParam(":gebruikersnaam", $param_gebruikersnaam, PDO::PARAM_STR);
 
-            $param_gebruikersnaam = trim($_POST["gebruikersnaam"]);
+            $stmt->bindParam(":gebruikersnaam", $gebruikersnaam, PDO::PARAM_STR);
 
             if($stmt->execute()){
                 if($stmt->rowCount() == 1){
@@ -50,7 +50,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             $_SESSION["loggedin"] = true;
                             $_SESSION["id"] = $id;
                             $_SESSION["gebruikersnaam"] = $gebruikersnaam;
-
                             header("location: welcome.php");
                         } else{
                             $wachtwoord_err = "Het wachtwoord is onjuist.";
