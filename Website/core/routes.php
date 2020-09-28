@@ -11,5 +11,13 @@ $router->define([
     '/contact' => [
         'controller' => 'ContactController',
         'method' => 'index'
+    ],
+    '/login' => [
+        'controller' => 'LoginController',
+        'method' => 'index'
+    ],
+    '/register' => [
+        'controller' => 'RegisterController',
+        'method' => 'index'
     ]
 ]);
