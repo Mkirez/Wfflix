@@ -1,11 +1,7 @@
 <?php
-<<<<<<< HEAD
-require 'models/Basemodel.php';
-require 'models/Usermodel.php';
 
-=======
 ini_set('display_errors', 1);
->>>>>>> b3acabce85ce6b7e8e53d53f27d41e11923395ec
+
 
 session_start();
 
@@ -31,9 +27,12 @@ require 'controllers/ContactController.php';
 require 'controllers/RegisterController.php';
 require 'controllers/LoginController.php';
 
+require 'views/Sidebar.html';
+
 require 'core/Router.php';
 
 $router = new Router();
 require 'core/routes.php';
 $router->direct();
+
 

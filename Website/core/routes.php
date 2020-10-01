@@ -20,7 +20,11 @@ $router->define([
         '/register' => [
             'controller' => 'RegisterController',
             'method' => 'index'
-        ]
+        ],
+        '/home' => [
+        'controller' => 'HomeController',
+        'method' => 'index'
+    ],
     ],
     'POST' => [
         '/login' => [
