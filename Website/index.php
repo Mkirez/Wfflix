@@ -1,4 +1,7 @@
 <?php
+require 'models/Basemodel.php';
+require 'models/Usermodel.php';
+
 
 require 'controllers/HomeController.php';
 require 'controllers/AboutController.php';
