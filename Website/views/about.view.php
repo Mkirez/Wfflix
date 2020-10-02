@@ -2,7 +2,7 @@
 <html>
 
 <?php
-$title = "Home";
+$title = "About";
 include "includes/head.view.php"
 ?>
 
@@ -11,8 +11,8 @@ include "includes/head.view.php"
 <?php include "includes/nav.view.php" ?>
 
 <div class="wrapper">
-    <div class="container-fluid">
-        <h1>about</h1>
+    <div class="container-fluid" style="color: #FFCB05">
+        <h1>About</h1>
     </div>
 </div>
 

@@ -5,6 +5,6 @@ class HomeController
 {
     public function index()
     {
-        require 'views/home.view.php';
+        require 'C:\Users\Alex van der Steen\Code\wfflix\Website\views\home.view.php';
     }
 }

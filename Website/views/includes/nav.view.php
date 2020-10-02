@@ -17,7 +17,7 @@
                         </nav>
                     </div>
                     <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4 image d-flex justify-content-center">
-                        <img src="/asset/img/WFFLIX.svg">
+                                <img src="/asset/img/WFFLIX.svg" role="button">
                     </div>
                     <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">
                         <div class="row">

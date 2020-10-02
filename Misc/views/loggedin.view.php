@@ -19,7 +19,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 </head>
 <body>
     <div class="page-header">
-        <h1>Hallo, <b><?php echo htmlspecialchars($_SESSION["gebruikersnaam"]); ?></b>. Welkom bij WFFLIX.</h1>
+        <h1>Hallo, <b><?= htmlspecialchars($_SESSION["gebruikersnaam"]) ?></b>. Welkom bij WFFLIX.</h1>
     </div>
     <p>
         <a href="reset-password.php" class="btn btn-warning">Wachtwoord resetten.</a>

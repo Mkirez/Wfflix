@@ -1,75 +1,32 @@
 <?php
-/**
- * Created by: Jake 2020
- */
-
 class UserModel extends BaseModel
 {
-    private $id;
-    private $username, $password;
-    private $createdAt, $updatedAt;
+    private int $id;
+    private string $gebruikersnaam, $wachtwoord;
+    private $created_at, $updated_at;
 
     public function __construct()
     {
         parent::__construct();
     }
 
-    public function findByEmail(string $email) : void
+    public function findByEmail(string $email)
     {
-        $query = "SELECT * FROM gebruikers WHERE gebruikersnaam = :username";
-        if ($stmt = $this->pdo->prepare($query)) :
-            $stmt->bindParam(':username', $email, PDO::PARAM_STR);
-            $stmt->execute();
-            $data = $stmt->fetch();
-            if($data !== false) :
-                $this->id = $data['id'];
-                $this->username = $data['wachtwoord'];
-                $this->password = $data['wachtwoord'];
-                $this->createdAt = $data['created_at'];
-                $this->updatedAt = $data['updated_at'];
+        $query = "SELECT * FROM gebruikers WHERE gebruikersnaam = :gebruikersnaam";
+
+            if ($stmt = $this->pdo->prepare($query)) :
+                $stmt->bindParam(':gebruikersnaam',$gebruikersnaam, PDO::PARAM_STR);
+                $stmt->execute();
+                $data = $stmt->fetch();
+                if ($data !== false) :
+                        $this->id = $data['id'];
+                        $this->gebruikersnaam = $data['gebruikersnaam'];
+                        $this->wachtwoord = $data['wachtwoord'];
+                        $this->created_at = $data['created_at'];
+                        $this->updated_at = $data['updated_at'];
+                    endif;
             endif;
-        endif;
     }
-
-    public function checkExistingUsername(string $username) : bool
-    {
-        $query = "SELECT * FROM gebruikers WHERE gebruikersnaam = :username";
-        if ($stmt = $this->pdo->prepare($query)) :
-            $stmt->bindParam(':username', $username, PDO::PARAM_STR);
-            $stmt->execute();
-            return $stmt->rowCount() == 0;
-        endif;
-    }
-
-    public function find($id)
-    {
-        $query = "SELECT * FROM gebruikers WHERE id = :id";
-
-        if ($stmt = $this->pdo->prepare($query)) :
-            $stmt->bindParam(':id', $id, PDO::PARAM_INT);
-            $stmt->execute();
-            $data = $stmt->fetch();
-            if($data !== false) :
-                $this->id = $data['id'];
-                $this->username = $data['gebruikersnaam'];
-                $this->password = $data['wachtwoord'];
-                $this->createdAt = $data['created_at'];
-                $this->updatedAt = $data['updated_at'];
-            endif;
-        endif;
-    }
-
-    public function store(UserModel $user)
-    {
-        $query = "INSERT INTO gebruikers (gebruikersnaam, wachtwoord) VALUES (:gebruikersnaam, :wachtwoord)";
-        if ($stmt = $this->pdo->prepare($query)) :
-            $stmt->bindValue(':gebruikersnaam', $user->getUserName());
-            $stmt->bindValue(':wachtwoord', password_hash($user->getPassword(),PASSWORD_DEFAULT));
-            return $stmt->execute();
-        endif;
-        return false;
-    }
-
     /**
      * @return int
      */
@@ -89,17 +46,17 @@ class UserModel extends BaseModel
     /**
      * @return string
      */
-    public function getUserName(): string
+    public function getName(): string
     {
-        return $this->username;
+        return $this->gebruikersnaam;
     }
 
     /**
-     * @param string $username
+     * @param string $gebruikersnaam
      */
-    public function setUserName(string $username): void
+    public function setName(string $gebruikersnaam): void
     {
-        $this->username = $username;
+        $this->gebruikersnaam = $gebruikersnaam;
     }
 
     /**
@@ -107,47 +64,47 @@ class UserModel extends BaseModel
      */
     public function getPassword(): string
     {
-        return $this->password;
+        return $this->wachtwoord;
     }
 
     /**
-     * @param string $password
+     * @param string $wachtwoord
      */
-    public function setPassword(string $password): void
+    public function setPassword(string $wachtwoord): void
     {
-        $this->password = $password;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getCreatedAt()
-    {
-        return $this->createdAt;
-    }
-
-    /**
-     * @param mixed $createdAt
-     */
-    public function setCreatedAt($createdAt): void
-    {
-        $this->createdAt = $createdAt;
+        $this->wachtwoord = $wachtwoord;
     }
 
     /**
      * @return mixed
      */
-    public function getUpdatedAt()
+    public function getCreated_at()
     {
-        return $this->updatedAt;
+        return $this->created_at;
     }
 
     /**
-     * @param mixed $updatedAt
+     * @param mixed $created_at
      */
-    public function setUpdatedAt($updatedAt): void
+    public function setCreated_at($created_at): void
     {
-        $this->updatedAt = $updatedAt;
+        $this->created_at = $created_at;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getUpdated_at()
+    {
+        return $this->updated_at;
+    }
+
+    /**
+     * @param mixed $updated_at
+     */
+    public function setUpdatedAt($updated_at): void
+    {
+        $this->updated_at = $updated_at;
     }
 
 

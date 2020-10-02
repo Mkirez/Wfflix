@@ -111,7 +111,7 @@ form{
 
 #loremipsum{
 	border-radius: 10px;
-	background-color: #8080807a;
+	background-color: rgba(128, 128, 128, 0.48);
 	border: 0px solid #ced4da;
 	color: white;
 	position: relative;
