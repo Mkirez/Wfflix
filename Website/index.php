@@ -32,9 +32,23 @@ require 'controllers/ContactController.php';
 require 'controllers/CourseController.php';
 require 'controllers/RegisterController.php';
 require 'controllers/LoginController.php';
+
+//html video pages
 require 'controllers/HtmllearnController.php';
 require 'controllers/CsslearnController.php';
 require 'controllers/HtmlcsslearnController.php';
+
+//php videos pages
+require 'controllers/PhpintroController.php';
+require 'controllers/PhpsyntaxController.php';
+require 'controllers/PhpincludeController.php';
+
+//js video pages
+require 'controllers/JsfundamentalsController.php';
+require 'controllers/JsvariablesController.php';
+require 'controllers/JsdatatypesController.php';
+
+
 
 
 

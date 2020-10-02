@@ -30,15 +30,39 @@ $router->define([
             'method' => 'index'
         ],
         '/html_learn' => [
-            'controller' => 'HtmllearnController',
+            'controller' => 'HtmllearnController',// courses pagina(html video )
             'method' => 'index'
         ],
         '/css_learn' => [
-            'controller' => 'CsslearnController',
+            'controller' => 'CsslearnController',// courses pagina(css learn video)
             'method' => 'index'
         ],
         '/html&css' => [
-            'controller' => 'HtmlcsslearnController',
+            'controller' => 'HtmlcsslearnController',// courses pagina(html en css full course)
+            'method' => 'index'
+        ],
+        '/phpintro' => [
+            'controller' => 'PhpintroController',// courses pagina(php intro video )
+            'method' => 'index'
+        ],
+        '/phpsyntax' => [
+            'controller' => 'PhpsyntaxController',// courses pagina(php syntax video )
+            'method' => 'index'
+        ],
+         '/phpinclude' => [
+            'controller' => 'PhpincludeController',// courses pagina(php syntax video )
+            'method' => 'index'
+        ],
+        '/jsfundamentals' => [
+            'controller' => 'JsfundamentalsController',// courses pagina(php syntax video )
+            'method' => 'index'
+        ],
+        '/jsvariables' => [
+            'controller' => 'JsvariablesController',// courses pagina(php syntax video )
+            'method' => 'index'
+        ],
+        '/jsdatatypes' => [
+            'controller' => 'JsdatatypesController',// courses pagina(php syntax video )
             'method' => 'index'
         ],
     ],

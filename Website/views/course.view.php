@@ -93,7 +93,7 @@ include "includes/head.view.php"
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="inner2">
-                                    <a href="http://localhost:8000/php_course">
+                                    <a href="/phpintro">
                                         <img src="../asset/img/voorbeeld.jpg" style="width: 100%; height: 100%;">
                                     </a>
 
@@ -112,7 +112,7 @@ include "includes/head.view.php"
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="inner2">
-                                    <a href="http://localhost:8000/php_Santax">
+                                    <a href="/phpsyntax">
                                         <img src="../asset/img/voorbeeld.jpg" style="width: 100%; height: 100%;">
                                     </a>
 
@@ -133,7 +133,7 @@ include "includes/head.view.php"
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="inner2">
-                                    <a href="">
+                                    <a href="/phpinclude">
                                         <img src="../asset/img/voorbeeld.jpg" style="width: 100%; height: 100%;">
                                     </a>
                                     
@@ -162,7 +162,7 @@ include "includes/head.view.php"
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="inner2">
-                                    <a href="">
+                                    <a href="/jsfundamentals">
                                         <img src="../asset/img/voorbeeld.jpg" style="width: 100%; height: 100%;">
                                     </a>
                                     
@@ -184,7 +184,7 @@ include "includes/head.view.php"
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="inner2">
-                                    <a href="">
+                                    <a href="/jsvariables">
                                         <img src="../asset/img/voorbeeld.jpg" style="width: 100%; height: 100%;">
                                     </a>
 
@@ -204,7 +204,7 @@ include "includes/head.view.php"
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="inner2">
-                                    <a href="">
+                                    <a href="/jsdatatypes">
                                         <img src="../asset/img/voorbeeld.jpg" style="width: 100%; height: 100%;">
                                     </a>
 
