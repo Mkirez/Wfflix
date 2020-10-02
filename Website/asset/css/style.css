@@ -6,7 +6,7 @@
 
 
 body { 
-    background: url(../img/background.jpeg) no-repeat center center fixed; 
+    background: url('../img/background.jpeg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -124,23 +124,6 @@ form{
 }
 textarea.form-control {
     height: 160px!important;
-}
-
-
-/*.submenu {
-    /* display: none; */
-   /* position: absolute;
-    height: 685px;
-    background: white;
-    z-index: 100;
-    left: -29px;
-    width: 152%;
-    padding: 0;*/
-}
-/*.navbar-dark:hover .submenu{
-    display: block!important;
-*/
-   
 }
 
 .navbar-nav .nav-link {
