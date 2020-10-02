@@ -32,6 +32,11 @@ require 'controllers/ContactController.php';
 require 'controllers/CourseController.php';
 require 'controllers/RegisterController.php';
 require 'controllers/LoginController.php';
+require 'controllers/HtmllearnController.php';
+require 'controllers/CsslearnController.php';
+require 'controllers/HtmlcsslearnController.php';
+
+
 
 require 'core/Router.php';
 

@@ -29,6 +29,18 @@ $router->define([
             'controller' => 'HomeController',
             'method' => 'index'
         ],
+        '/html_learn' => [
+            'controller' => 'HtmllearnController',
+            'method' => 'index'
+        ],
+        '/css_learn' => [
+            'controller' => 'CsslearnController',
+            'method' => 'index'
+        ],
+        '/html&css' => [
+            'controller' => 'HtmlcsslearnController',
+            'method' => 'index'
+        ],
     ],
     'POST' => [
         '/login' => [
@@ -41,3 +53,4 @@ $router->define([
         ],
     ]
 ]);
+
