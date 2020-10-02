@@ -24,6 +24,7 @@ require 'controllers/AboutController.php';
 require 'controllers/ContactController.php';
 require 'controllers/RegisterController.php';
 require 'controllers/LoginController.php';
+require 'controllers/CourseController.php';
 
 //html video pages
 require 'controllers/HtmllearnController.php';
