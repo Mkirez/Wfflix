@@ -32,12 +32,12 @@ include "includes/head.view.php"
                 <div class="row">
                     <div class="col-md-6 text-left ">
                         <div class="col controls-right">   <!--Next video-->
-                            <a href="" id="next_link">&lt;- vorige video</a>                        
+                            <a href="/course" id="next_link">&lt;- alle courses bekijken</a>                        
                         </div>
                     </div>
                     <div class="col-md-6 text-right">
                         <div class="col controls-right">   <!--Next video-->
-                            <a href="" id="next_link">volgende video -&gt;</a>
+                            <a href="/css_learn" id="next_link">volgende video -&gt;</a>
                         </div>
                     </div>
                 </div>

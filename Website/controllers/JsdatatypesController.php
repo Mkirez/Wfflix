@@ -8,6 +8,6 @@ class JsdatatypesController
 {
     public function index()
     {
-        require 'views/jsfundamentals.views.php';
+        require 'views/jsdatatypes.views.php';
     }
 }
