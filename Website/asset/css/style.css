@@ -202,10 +202,10 @@ iframe {
 .card-text p {
   font-size: 9px;
 }
-.videos-courses{
+/*.videos-courses{
   color: white;
   padding: 90px 9px 60px;
-}
+}*/
 
 
 .space{
@@ -234,4 +234,28 @@ iframe {
 
 .under-wrapper{
   background-color: transparent gray;
+}
+
+.inner2 {
+    padding: 40px 13px 39px 18px;
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+    border-radius: 30px;
+    border: 0px;
+    position: relative;
+}
+
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: ;
+    color: #aaa;
 }
