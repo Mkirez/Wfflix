@@ -8,6 +8,7 @@
                             <div id="myNav" class="overlay">
                                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                                 <div class="overlay-content">
+                                    <a href="/home">home</a>
                                     <a href="/about">About</a>
                                     <a href="/course">courses</a>
                                     <a href="/contact">Contact</a>

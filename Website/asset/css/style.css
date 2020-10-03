@@ -206,3 +206,32 @@ iframe {
   color: white;
   padding: 90px 9px 60px;
 }
+
+
+.space{
+  padding-top: 80px;
+}
+
+.no-padding{
+  padding: 0px!important
+}
+.no-margin{
+  margin: 0px!important;
+}
+
+.controls-right a{
+  color: gray;
+  font-size: 30px;
+}
+
+.controls-right a:hover{
+
+  text-decoration: none;
+  transition:1s;
+  color: white;
+
+}
+
+.under-wrapper{
+  background-color: transparent gray;
+}
