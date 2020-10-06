@@ -13,6 +13,8 @@ require "core/config.php";
  */
 require 'models/BaseModel.php';
 require 'models/UserModel.php';
+require 'models/videoModel.php';
+
 
 
 
@@ -25,6 +27,7 @@ require 'controllers/ContactController.php';
 require 'controllers/RegisterController.php';
 require 'controllers/LoginController.php';
 require 'controllers/CourseController.php';
+
 
 //html video pages
 require 'controllers/HtmllearnController.php';
