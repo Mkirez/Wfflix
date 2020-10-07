@@ -8,9 +8,9 @@
                             <div id="myNav" class="overlay">
                                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                                 <div class="overlay-content">
-                                    <a href="/">home</a>
+                                    <a href="/">Home</a>
                                     <a href="/about">About</a>
-                                    <a href="/course">courses</a>
+                                    <a href="/course">Courses</a>
                                     <a href="/contact">Contact</a>
                                 </div>
                             </div>
@@ -18,7 +18,7 @@
                         </nav>
                     </div>
                     <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4 image d-flex justify-content-center">
-                                <img src="/asset/img/WFFLIX.svg" role="button">
+                                <img src="/asset/img/WFFLIX.svg">
                     </div>
                     <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">
                         <div class="row">

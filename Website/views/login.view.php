@@ -9,7 +9,7 @@ include "includes/head.view.php"
 <body>
 <?php include "includes/nav.view.php" ?>
 <div class="wrapper">
-    <div class="container">
+    <div class="container" style="color: #FFCB05;">
         <h2>Inloggen</h2>
         <p>Vul uw gegevens in om in te loggen.</p>
         <form action="/login" method="post">
@@ -27,7 +27,7 @@ include "includes/head.view.php"
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Login">
             </div>
-            <p>Heeft u geen account? <a href='/register'>Registreer dan nu</a>.</p>
+            <p>Heeft u geen account? <a href='/register' style="color:lightgreen">Registreer dan nu</a>.</p>
         </form>
     </div>
 </div>

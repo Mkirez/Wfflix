@@ -1,4 +1,6 @@
 <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAABzSURBVDhPY2RgYPj//zQrkIIARtPfUBZ2gK6WCcrGCkCKkTVgA3gNIAZgGIDPRmxyYAOw+RtZMTaNMD3U9wIIYLMRl9do4wJSANwAQgkIGSCrxesCkEJCBlM3DIjxBroa6roAGSDbhM9lGAbgU4wpx8AAAJlXI+O10QRRAAAAAElFTkSuQmCC" rel="icon" type="image/x-icon" />
     <title><?=$title?></title>
     <!-- style -->
     <link rel="stylesheet" type="text/css" href="/asset/css/style.css">
