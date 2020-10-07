@@ -18,7 +18,7 @@
                         </nav>
                     </div>
                     <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4 image d-flex justify-content-center">
-                                <img src="/asset/img/WFFLIX.svg">
+                        <input type="image" src="asset/img/WFFLIX.svg" onclick="window.location.href='/'"/>
                     </div>
                     <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">
                         <div class="row">
