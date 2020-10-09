@@ -25,7 +25,10 @@ $router->define([
             'controller' => 'CourseController',
             'method' => 'index'
         ],
-        
+        '/video' => [
+            'controller' => 'CourseController',
+            'method' => 'show'
+        ],
         '/html_learn' => [
             'controller' => 'HtmllearnController',// courses pagina(html video )
             'method' => 'index'

@@ -52,7 +52,7 @@ include "includes/head.view.php"
         <div class="under-wrapper">
             <div class="row">
                 <div class="col-md-12 text-white">
-                    <h1>Quick rundown of the course</h1>
+                    
                     <ul>
                         <li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed</li>
                         <li>Labore et dolore magna aliquyam erat, sed diam voluptua.</li>

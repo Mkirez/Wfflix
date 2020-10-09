@@ -5,7 +5,9 @@ class videoModel extends BaseModel
     //
     private int $videoID;
     private string $naam_video;
+    private string $beschrijving;
     private string $image;
+    private string $video;
 
   
 
@@ -18,16 +20,12 @@ class videoModel extends BaseModel
     {
         $query = "SELECT * FROM video";
 
-            if ($stmt = $this->pdo->prepare($query)) :
+            if ($stmt = $this->pdo->prepare($query)){
 
-
-              
                 $stmt->execute();
                 $data = $stmt->fetchall(); // data ophalen en bij fetch kun je 1 rij ophalen 
 
                 $videoarray = []; // lege array aanmaken
-
-
 
                 foreach ($data as $row) { //loopt over alle records over de database
                         
@@ -39,23 +37,32 @@ class videoModel extends BaseModel
 
                     $videoarray[] = $video;
                    
-
-
-
-
-
                 }
                 //return array
                 return $videoarray;
-
-
-
-                endif;
-
-
+            }
     }
 
 
+    public function fetchById($id)
+    {
+        $query = "SELECT * FROM video where videoID = :id";
+        $stmt = $this->pdo->prepare($query);
+        $stmt->bindParam(':id',$id,PDO::PARAM_INT);
+        $stmt->execute();
+        $data = $stmt->fetch();
+        if ($data){
+            $video = new videoModel();
+            $video->setId($data['videoID']); 
+            $video->setVideoName($data['naam_video']); 
+            $video->setBeschrijving($data['videobeschrijving']); 
+            $video->setImage($data['image']); 
+            $video->setVideo($data['video']); 
+            return $video;
+        }else{
+            return null;
+        }
+    }
 
 
     
@@ -79,7 +86,6 @@ class videoModel extends BaseModel
     public function setVideoName(string $videoName): void
     {
         $this->naam_video = $videoName;
-
     }
 
     /**
@@ -91,6 +97,17 @@ class videoModel extends BaseModel
         return $this->naam_video;
     }
     
+    public function getBeschrijving(): string
+    {
+        return $this->beschrijving;
+    }
+
+
+    public function setBeschrijving(string $beschrijving): void
+    {
+        $this->beschrijving = $beschrijving;
+    }
+
       public function getImage(): string
     {
         return $this->image;
@@ -103,8 +120,15 @@ class videoModel extends BaseModel
 
     }
     
+    public function getVideo(): string
+    {
+        return $this->video;
+    }
 
 
-
+    public function setVideo(string $video): void
+    {
+        $this->video = $video;
+    }
 }
 

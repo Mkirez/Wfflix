@@ -1,4 +1,4 @@
-<div class="nav-wrapper">
+ert<div class="nav-wrapper">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 col-xs-12 col-md-12 col-sm-12 col-lg-12">
@@ -8,9 +8,9 @@
                             <div id="myNav" class="overlay">
                                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                                 <div class="overlay-content">
-                                    <a href="/">Home</a>
+                                    <a href="/">home</a>
                                     <a href="/about">About</a>
-                                    <a href="/course">Courses</a>
+                                    <a href="/course">courses</a>
                                     <a href="/contact">Contact</a>
                                 </div>
                             </div>
@@ -18,7 +18,7 @@
                         </nav>
                     </div>
                     <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4 image d-flex justify-content-center">
-                        <input type="image" src="asset/img/WFFLIX.svg" onclick="window.location.href='/'"/>
+                                <img src="/asset/img/WFFLIX.svg" role="button">
                     </div>
                     <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">
                         <div class="row">
