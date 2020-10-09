@@ -33,7 +33,7 @@ include "includes/head.view.php"
             <?php foreach($videos as $video) { ?>              
                <div class="col-sm-12 col-xs-12 col-md-4 portfolio-thumbnail ">
                 <div class="inner2" id="card">
-                  <a href="#">
+                  <a href="">
                         <img src="<?= $video->getImage(); ?>">
                     </a>
                     <h2 class="text-white"><b><?= $video->getVideoname(); ?></b></h2> 
@@ -54,7 +54,7 @@ include "includes/head.view.php"
 
 <?php include "includes/footer.view.php" ?>
 
-</body>
+</body> 
 </html>
 
 
