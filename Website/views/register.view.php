@@ -29,7 +29,7 @@
             <input type="submit" class="btn btn-primary" value="Invoeren">
             <input type="reset" class="btn btn-default" value="Reset">
         </div>
-        <p>Heeft u al een account? <a href="login.view.php">Log dan hier in</a>.</p>
+        <p>Heeft u al een account? <a href="/login">Log dan hier in</a>.</p>
     </form>
 </div>
 </section>
