@@ -8,9 +8,11 @@ ert<div class="nav-wrapper">
                             <div id="myNav" class="overlay">
                                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                                 <div class="overlay-content">
-                                    <a href="/">home</a>
+                                    <a href="/">Home</a>
                                     <a href="/about">About</a>
-                                    <a href="/course">courses</a>
+                                    <?php  if (isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"]) { ?>
+                                    <a href="/course">Courses</a>
+                                    <?php } ?>
                                     <a href="/contact">Contact</a>
                                 </div>
                             </div>
@@ -22,6 +24,15 @@ ert<div class="nav-wrapper">
                     </div>
                     <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4">
                         <div class="row">
+                            <?php  if (isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"]) { ?>
+                            <div class="logout">
+                                <div class="row">
+                                    <div class="logout button">
+                                        <a href="/logout" class="btn btn-primary" type="submit">logout</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <?php }else{ ?>
                             <div class="col-md-6">
                                 <div class="row">
                                     <div class="col-md-12 text-right buttons">
@@ -35,9 +46,8 @@ ert<div class="nav-wrapper">
                                         <a href="/register" class="btn btn-primary" type="submit">register</a>
                                     </div>
                                 </div>
-
                             </div>
-
+                            <?php } ?>
                         </div>
                     </div>
                 </div>
