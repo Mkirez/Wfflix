@@ -79,6 +79,10 @@ $router->define([
             'controller' => 'RegisterController',
             'method' => 'register'
         ],
+        '/contact' => [
+            'controller' => 'ContactController',
+            'method' => 'Sendemail'
+        ],
     ]
 ]);
 
