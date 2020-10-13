@@ -15,6 +15,7 @@ include "includes/head.view.php"
 
 <div class="space">
 </div>
+<?php  if (isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"]) { ?>
 <div class="container">
     <div class="col-md-12">
         <div class="form-group has-search">
@@ -46,7 +47,20 @@ include "includes/head.view.php"
 </div>
 
 
+<?php }else{ ?>
+    <div class="space">
+    </div>
 
+    <div class="container ">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-md-12 text-center not-loggedin">
+                    <h1><a href="/login" >log in&nbsp;</a>om de courses te bekijken</h1>
+                </div>
+        </div>
+    </div>
+
+<?php } ?>
 
 
 
