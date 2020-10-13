@@ -65,6 +65,10 @@ $router->define([
             'controller' => 'JsdatatypesController',// courses pagina(php syntax video )
             'method' => 'index'
         ],
+        '/logout' => [
+            'controller' => 'LogoutController',
+            'method' => 'index'
+        ],
     ],
     'POST' => [
         '/login' => [
@@ -74,6 +78,10 @@ $router->define([
         '/register' => [
             'controller' => 'RegisterController',
             'method' => 'register'
+        ],
+        '/contact' => [
+            'controller' => 'ContactController',
+            'method' => 'Sendemail'
         ],
     ]
 ]);

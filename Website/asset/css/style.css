@@ -79,9 +79,7 @@ form{
     width: 100%;
     height: 100%;
 }
-#inner-form {
-    /*padding: 40px 59px 73px;*/
-}
+
 .inner form {
     opacity: 0.6;
     border: 0px solid black;
@@ -90,6 +88,20 @@ form{
     width: 100%;
 
     }
+
+.login_inner{
+  max-width: 340px;
+}
+
+.login_inner form {
+    opacity: 0.6;
+    border: 0px solid black;
+    border-radius: 13px;
+    background: black;
+    width: 100%;
+    padding: 53px;
+}
+
 .wrapper {
     padding-top: 110px;
     padding-bottom: 40px;
@@ -258,4 +270,19 @@ img {
     text-align: center;
     pointer-events: ;
     color: #aaa;
+}
+
+.not-loggedin a{
+color: blue;
+
+}
+
+.not-loggedin a:hover{
+color: yellow;
+text-decoration: none;
+transition: 1s;
+
+}
+.max-container{
+  max-width: 340px!important;
 }
