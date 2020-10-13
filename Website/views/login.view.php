@@ -40,7 +40,7 @@
 
 
                         <div class="form-group password-group">
-                            <input type="text" name="password" class="form-control form-control-sm"  id="password"   placeholder="Wachtwoord">
+                            <input type="password" name="password" class="form-control form-control-sm"  id="password"   placeholder="Wachtwoord">
                         </div>
                         <button type="submit" name="submit" class="btn btn-primary" placeholder="lorem ipsum">Submit</button>
                         <p>Heeft u geen account? <a href='/register'>Registreer dan nu</a>.</p>
