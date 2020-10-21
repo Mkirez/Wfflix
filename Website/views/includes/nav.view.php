@@ -18,7 +18,7 @@
                             </div>
 
 
-                            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                            <span style="font-size:30px;cursor:pointer;color: #FFFFFF;" onclick="openNav()">&#9776;</span>
                         </nav>
                     </div>
 

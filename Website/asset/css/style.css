@@ -181,7 +181,7 @@ textarea.form-control {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
-  color: #818181;
+  color: white;
   display: block;
   transition: 0.3s;
 }
@@ -332,8 +332,6 @@ background-color:rgba(48, 48, 48, 1);
 .text-block p{
   color: white;
 }
-    
-
 
 .homebutton a{
   padding: 11px;
@@ -342,3 +340,17 @@ background-color:rgba(48, 48, 48, 1);
   font-size: 12px;
   border: 0px;
 }
+
+.w3-animate-left {
+    position: relative!important;
+    animation: animateleft 1.5s!important;
+}
+
+.gezeik p{
+    font-size:22px;
+}
+
+.zebi h1{
+    font-size:50px;
+}
+

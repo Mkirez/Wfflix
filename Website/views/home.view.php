@@ -13,28 +13,34 @@ include "includes/head.view.php"
 <div class="space">
 </div>
 
-<div class="wrapper text-white">
+<div class="space">
+</div>
+
+<div class="space">
+</div>
+
+<div class="w3-container w3-center w3-animate-left text-white">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <div class="text-b">
-                    <h1>Wat speelt in Nederland,
-                        speelt bij ons.
+                <div class="zebi text-b">
+                    <h1 >JOIN THE MILLIONS LEARNING<br>
+                        TO CODE WITH WFFLIX.
                     </h1>
                 </div>
             </div>
             <div class="col-md-12 text-center">
-                <div class="text-b">
+                <div class="gezeik text-b">
                     <p>
-                        Probeer 14 dagen gratis,
-                        daarna vanaf €4,99 per maand.<br>
-                        Opzeggen kan op elk moment.
+                        Develop more than skills.Give your team the<br>
+                        knowledge, experience, and confidence <br>
+                        they need to tackle any problem.
                     </p>
                 </div>
             </div>
             <div class="col-md-12 text-center">
                 <div class="homebutton">
-                    <a href="/login" class="btn btn-primary" type="submit">login</a>               
+                    <a href="/login" class="btn btn-secondary" type="submit">login</a>
                 </div>
             </div>
 
