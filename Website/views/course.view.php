@@ -60,6 +60,7 @@ Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.  </
                 </div>
         </div>
     </div>
+</div>
 
 <?php } ?>
 

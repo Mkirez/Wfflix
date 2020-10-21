@@ -52,7 +52,7 @@
 
                         <div class="row">
                             <div class="col-md-12 text-center text-block">
-                                 <p style="font-size: 13px;">Don’t have an account?<a href='/register'>Sign up</a>.</p>
+                                 <p style="font-size: 13px;">Don’t have an account? &nbsp;<a href='/register'>Sign up</a>.</p>
                             </div>
                         </div>
                        
