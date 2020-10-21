@@ -10,25 +10,42 @@ include "includes/head.view.php"
 <body>
 <?php include "includes/nav.view.php" ?>
 
-<div class="wrapper">
-    <div class="container-fluid" style="color: #FFCB05; font-family:'Calibri';">
-        <h1>Welkom bij WFFLIX</h1>
-        <br>
-        <p class="text" style="font-size: larger">
+<div class="space">
+</div>
 
-        <br>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-        <br>Labore et dolore magna aliquyam erat, sed diam voluptua.
-        <br>Et ea rebum. Stet clita kasd gubergren
-        <br>Ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-        <br>Sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-        <br>Gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-        <br>Lorem ipsum sed diam nonumy eirmod tempor invidunt ut labore et
-        <br>Dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-        <br>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-        <br>Forem ipsum dolor sit ametinvidunt ut labore
-    </p>
+<div class="wrapper text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="text-b">
+                    <h1>Wat speelt in Nederland,
+                        speelt bij ons.
+                    </h1>
+                </div>
+            </div>
+            <div class="col-md-12 text-center">
+                <div class="text-b">
+                    <p>
+                        Probeer 14 dagen gratis,
+                        daarna vanaf €4,99 per maand.<br>
+                        Opzeggen kan op elk moment.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-12 text-center">
+                <div class="homebutton">
+                    <a href="/login" class="btn btn-primary" type="submit">login</a>               
+                </div>
+            </div>
+
+        </div>
     </div>
 </div>
+
+
+<div class="space">
+</div>
+
 
 <?php include "includes/footer.view.php" ?>
 
