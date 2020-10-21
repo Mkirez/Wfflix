@@ -34,6 +34,7 @@ class videoModel extends BaseModel
                     $video->setId($row['videoID']); 
                     $video->setVideoName($row['naam_video']); 
                     $video->setImage($row['image']); 
+                    
 
                     $videoarray[] = $video;
                    

@@ -38,12 +38,6 @@ include "includes/head.view.php"
                     </p>
                 </div>
             </div>
-            <div class="col-md-12 text-center">
-                <div class="homebutton">
-                    <a href="/login" class="btn btn-secondary" type="submit">login</a>
-                </div>
-            </div>
-
         </div>
     </div>
 </div>

@@ -14,35 +14,43 @@
                         <div class="error" style="color: red; font-size: 22px;">
                             <?= isset($_SESSION["register_incorrect"]) ? $_SESSION["register_incorrect"] : ''; ?>
                         </div>
-                        <div class="row">
-                            <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text text-center">
-                                <h2>Registreren</h2>
-                            </div>
-                        </div>
-                        <div class="form-group name-group <?= isset($_SESSION["login_incorrect"]) ? 'error' : ''; ?>">
+                        <div class="has_icon form-group name-group <?= isset($_SESSION["login_incorrect"]) ? 'error' : ''; ?>">
+                            <span class="fa fa-user form-control-register"></span>
                             <input name="gebruikersnaam" type="text" class="form-control form-control-sm"  id="loremipsum" placeholder="Gebruikersnaam" value="<?= isset($_POST["gebruikersnaam"]) ? $_POST["gebruikersnaam"] : ""?>">
                         </div>
 
                       
 
 
-                        <div class="form-group password-group">
+                        <div class=" has_icon form-group password-group">
+                            <span class="fa fa-shield form-control-register"></span>
                             <input type="text" name="wachtwoord" class="form-control form-control-sm"  id="loremipsum"   placeholder="wachtwoord">
                         </div>
-                        <div class="form-group password-group">
+
+                        <div class="has_icon form-group password-group">
+                            <span class="fa fa-shield form-control-register"></span>
                             <input type="text" name="bevestig_wachtwoord" class="form-control form-control-sm"  id="loremipsum"   placeholder="bevestig wachtwoord">
                         </div>
-                         <div class="form-group">
-                            <input type="submit" class="btn btn-primary" value="Invoeren">
-                            <input type="reset" class="btn btn-default" value="Reset">
+
+                         <div class="row">
+                            <div class="col-md-12">
+                                <input type="submit" class="btn btn-primary register_button" value="Invoeren">
+                            </div>
+                       </div>
+
+                        <div class="row">
+                            <div class="col-md-12 text-center text-block">
+                                 <p style="font-size: 13px;">Don’t have an account? &nbsp;<a href='/register'>Sign up</a>.</p>
+                            </div>
                         </div>
-                        <p>Heeft u al een account? <a href="/login">Log dan hier in</a>.</p>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+
 <?php include "includes/footer.view.php" ?>
 </body>
 </html>

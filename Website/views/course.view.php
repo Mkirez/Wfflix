@@ -16,9 +16,9 @@ include "includes/head.view.php"
 <div class="space">
 </div>
 <?php  if (isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"]) { ?>
-<div class="container">
-    <div class="col-md-12">
-        <div class="form-group has-search">
+<div class="container-fluid">
+    <div class="col-md-6">
+        <div class="form-group has-search" id="searchbalk">
             <span class="fa fa-search form-control-feedback"></span>
             <input type="text" class="form-control" placeholder="Search" id="myinput" type="text"  placeholder="Search..." >
         </div>
@@ -38,7 +38,8 @@ include "includes/head.view.php"
                         <img src="<?= $video->getImage(); ?>">
                     </a>
                     <h2 class="text-white"><b><?= $video->getVideoname(); ?></b></h2> 
-                    <p class="text-white"><?= $video->getId(); ?></p>        
+                    <p class="text-white">Lorem Ipsum
+Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.  </p>        
                 </div>
             </div>
         <?php } ?>

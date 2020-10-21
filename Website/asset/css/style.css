@@ -96,10 +96,10 @@ form{
 .login_inner form {
     border: 0px solid black;
     border-radius: 17px;
-    background: #0000008a;
+    background: #000000d9;
     width: 100%;
-    padding: 28px;
-}
+    padding: 46px;
+  }
 
 .wrapper {
     padding-top: 110px;
@@ -132,6 +132,7 @@ form{
 #loremipsum::placeholder{
 	color: white;
 	border:0px solid black;
+
 }
 
 .form-control:focus {
@@ -300,6 +301,17 @@ img {
     color: #aaa;
 }
 
+.has_icon .form-control-register {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: ;
+    color: #aaa;
+}
 .not-loggedin a{
 color: blue;
 
@@ -324,13 +336,31 @@ background-color:rgba(48, 48, 48, 1);
 
 }
 
+.has_icon input{
+border:0px;
+border-radius: 10px;
+color: white;
+
+background-color:rgba(48, 48, 48, 1);
+}
+
+
 .login_button{
   background-color:#27AE60!important;
   color: white!important;
   width: 100%;
 }
-.text-block p{
-  color: white;
+.register_button{
+  background-color:#27AE60!important;
+  color: white!important;
+  width: 100%;
+}
+.text-block p {
+    color: white;
+    margin-bottom: 0px!important;
+}
+.text-block{
+  margin-top: 10px;
 }
 
 .homebutton a{
@@ -354,3 +384,11 @@ background-color:rgba(48, 48, 48, 1);
     font-size:50px;
 }
 
+#searchbalk input{
+  background-color: white;
+  color: white;
+}
+#searchbalk input:focus{
+  background-color: white!important;
+ color: gray;
+}

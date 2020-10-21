@@ -5,7 +5,7 @@
                 <div class="row">
                     <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4 d-flex justify-content-start">
                         <nav class=" navbar-dark ">
-                            <div id="myNav" class="overlay">
+                            <div id="myNav" class="overlay" style="z-index: 5;">
                                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                                 <div class="overlay-content">
                                     <a href="/">Home</a>
