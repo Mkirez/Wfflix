@@ -21,19 +21,22 @@ include "includes/head.view.php";
                                 <h2>WE LIKE TO HEAR FROM YOU!</h2>
                             </div>
                         </div>
-                        <div class="form-group name-group">
+                        <div class="form-group name-group has_icon">
+                            <span class="fa fa-user form-control-register"></span>
                             <input name="naam" type="text" class="form-control form-control-sm"  id="loremipsum" placeholder="naam">
                         </div>
-                        <div class="form-group email-group">
+                        <div class="form-group email-group has_icon">
+                            <span class="fa fa-envelope form-control-register"></span>
                             <input type="text" name="onderwerp" class="form-control form-control-sm"  id="loremipsum" 	placeholder="onderwerp">
                         </div>
-                        <div class="form-group achternaam-group">
+                        <div class="form-group achternaam-group has_icon">
+                            <span class="fa fa-phone form-control-register"></span>
                             <input type="text" class="form-control form-control-sm" id="loremipsum" name="email" placeholder="email">
                         </div>
                         <div class="form-group">
                             <textarea name="bericht" class="form-control" id="loremipsum" rows="3"></textarea>
                         </div>
-                        <button type="submit" name="submit" class="btn btn-primary" placeholder="lorem ipsum">Submit</button>
+                        <button type="submit" name="submit" class="btn btn-success" placeholder="lorem ipsum">Submit</button>
                         <!-- <?php if (isset($_POST['submit'])) { ?>
                             <h3>Thanks we'll be in touch</h3>
                          <?php } ?> -->
