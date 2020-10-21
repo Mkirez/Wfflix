@@ -10,7 +10,7 @@ class CourseController
 
     	$videos = new videoModel();
 
-    	$videos = $videos->fetchall();
+    	$videos = $videos->fetchall(1);
 
 
 

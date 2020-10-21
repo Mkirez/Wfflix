@@ -16,9 +16,15 @@
                                     <a href="/contact">Contact</a>
                                 </div>
                             </div>
+
+
                             <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
                         </nav>
                     </div>
+
+
+                    <p id="demo"></p>
+
                     <div class="col-xs-4 col-md-4 col-sm-4 col-lg-4 image d-flex justify-content-center">
                                 <input type="image" src="/asset/img/WFFLIX.svg" onclick="window.location.href='/'">
                     </div>

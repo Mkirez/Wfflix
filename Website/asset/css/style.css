@@ -96,10 +96,10 @@ form{
 .login_inner form {
     opacity: 0.6;
     border: 0px solid black;
-    border-radius: 13px;
+    border-radius: 17px;
     background: black;
     width: 100%;
-    padding: 53px;
+    padding: 17px;
 }
 
 .wrapper {
@@ -272,6 +272,26 @@ img {
     color: #aaa;
 }
 
+
+
+.has_icon .form-control {
+    padding-left: 2.375rem;
+    border-radius: 30px;
+    border: 0px;
+    position: relative;
+}
+.has_icon .form-control-login {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: ;
+    color: #aaa;
+}
+
 .not-loggedin a{
 color: blue;
 
@@ -285,4 +305,22 @@ transition: 1s;
 }
 .max-container{
   max-width: 340px!important;
+}
+
+form .form-group input{
+border:0px;
+border-radius: 10px;
+color: white;
+
+background-color:rgba(48, 48, 48, 1);
+
+}
+
+.login_button{
+  background-color:#27AE60!important;
+  color: white!important;
+  width: 100%;
+}
+.text-block p{
+  color: white;
 }

@@ -27,23 +27,35 @@
                         <div class="error" >
                             <?= isset($_SESSION["login_incorrect"]) ? $_SESSION["login_incorrect"] : ''; ?>
                         </div>
-                        <div class="row">
-                            <div class="col-xs-12 col-md-12 col-sm-12 col-lg-12 text text-center">
-                                <h2>log in</h2>
-                            </div>
-                        </div>
-                        <div class="form-group name-group <?= isset($_SESSION["login_incorrect"]) ? 'error' : ''; ?>">
-                            <input name="username" type="text" class="form-control form-control-sm"  id="name" placeholder="Gebruikersnaam" value="<?= isset($_POST["username"]) ? $_POST["username"] : ""?>">
+
+
+
+                        <div class="has_icon form-group name-group <?= isset($_SESSION["login_incorrect"]) ? 'error' : ''; ?>">
+                            <span class="fa fa-user form-control-login"></span>
+                            <input name="username" type="text" class="form-control form-control-sm"  id="name" placeholder="username" value="<?= isset($_POST["username"]) ? $_POST["username"] : ""?>">
                         </div>
 
                       
 
 
-                        <div class="form-group password-group">
-                            <input type="password" name="password" class="form-control form-control-sm"  id="password"   placeholder="Wachtwoord">
+                        <div class=" has_icon form-group password-group">
+                            <span class="fa fa-shield form-control-login"></span>
+                            <input type="password" name="password" class="form-control form-control-sm"  id="password"   placeholder="password">
                         </div>
-                        <button type="submit" name="submit" class="btn btn-primary" placeholder="lorem ipsum">Submit</button>
-                        <p>Heeft u geen account? <a href='/register'>Registreer dan nu</a>.</p>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button type="submit" name="submit" class="btn login_button " placeholder="lorem ipsum">Submit
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 text-center text-block">
+                                 <p style="font-size: 13px;">Don’t have an account?<a href='/register'>Sign up</a>.</p>
+                            </div>
+                        </div>
+                       
                     </form>
                 </div>
             </div>
