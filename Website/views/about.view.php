@@ -16,23 +16,21 @@ include "includes/head.view.php"
             <div class="col-md-12 text-center">
                 <div class="zebi text-b">
                     <h1 >JOIN THE MILLIONS LEARNING<br>
-                        TO CODE WITH WFFLIX.
+                        TO CODE WITH WFFLIX
                     </h1>
                 </div>
             </div>
             <div class="col-md-12 text-center">
                 <div class="gezeik text-b">
                     <p style="font-size: 20px;">
-                    <br>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                    <br>Labore et dolore magna aliquyam erat, sed diam voluptua.
-                    <br>Et ea rebum. Stet clita kasd gubergren
-                    <br>Ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                    <br>Sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-                     <br>Gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                    <br>Lorem ipsum sed diam nonumy eirmod tempor invidunt ut labore et
-                     <br>Dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-                    <br>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                    <br>Forem ipsum dolor sit ametinvidunt ut labore
+                        Wfflix is an education company. But not one in the way you might think. We’re committed to building the best learning experience
+                        inside and out, making Wfflix the best place for our team to learn, teach, and create the online learning experience
+                        of the future.
+                    </p>
+                    <br>
+                    <p style="font-size: 20px;">
+                        Education is old. The current public school system in the US dates back to the 19th century and wasn’t designed to scale the way it has.
+                        Lots of companies are working to “disrupt” education by changing the way things work in the classroom and by bringing the classroom online.
                     </p>
                 </div>
             </div>

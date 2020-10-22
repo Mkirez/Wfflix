@@ -20,14 +20,14 @@ include "includes/head.view.php"
                 <div class="col-md-12 text-center">
                     <div class="zebi text-b">
                         <h1 >WELCOME <?php echo $_SESSION['naam']; ?><br> 
-                            TO CODE WITH WFFLIX.
+                            TO CODE WITH WFFLIX
                         </h1>
                     </div>
                 </div>
                 <div class="col-md-12 text-center">
                     <div class="gezeik text-b">
                         <p>
-                            Develop more than skills.Give your team the<br>
+                            Develop more than skills. Give your team the<br>
                             knowledge, experience, and confidence <br>
                             they need to tackle any problem.
                         </p>
@@ -50,14 +50,14 @@ include "includes/head.view.php"
                 <div class="col-md-12 text-center">
                     <div class="zebi text-b">
                         <h1 >JOIN THE MILLIONS LEARNING<br>
-                            TO CODE WITH WFFLIX.
+                            TO CODE WITH WFFLIX
                         </h1>
                     </div>
                 </div>
                 <div class="col-md-12 text-center">
                     <div class="gezeik text-b">
                         <p>
-                            Develop more than skills.Give your team the<br>
+                            Develop more than skills. Give your team the<br>
                             knowledge, experience, and confidence <br>
                             they need to tackle any problem.
                         </p>
