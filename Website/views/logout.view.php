@@ -22,14 +22,15 @@ session_destroy();
         <div class="row">
             <div class="col-md-12 text-center">
                 <div class="zebi text-b">
-                    <h1 >je bent nu uitgelogd<br>
+                    <h1 >you are logged out
+<br>
                     </h1>
                 </div>
             </div>
             <div class="col-md-12 text-center">
                 <div class="gezeik text-b">
                     <p>
-                        we zien je graag snel terug
+                        we look forward to seeing you back soon
                     </p>
                 </div>
             </div>
