@@ -24,10 +24,22 @@ class LoginController
     public function login(){
         // POST LOGIN
         $user =  new UserModel();
-        $user->findByEmail($_POST['username']);
+        $user->find2($_POST['username']);
+       // $naam=$user->getusername();
+       // $wachtwoord=$user->getPassword();
+        //echo $wachtwoord;
+        //echo "<br>".$naam."<br>";
+        //print_r($_POST);
+       // exit;
+
+
+        
+
+        
         if (password_verify($_POST['password'],$user->getPassword())){
             $_SESSION['loggedIn'] = true;
-            $_SESSION['userId'] = $user->getId();
+            $_SESSION['naam'] = $user->getUserName();
+
             header("location: /");
         } else {
             $_SESSION['login_incorrect'] = "Password or username not correct";

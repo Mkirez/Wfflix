@@ -19,7 +19,7 @@ include "includes/head.view.php"
             <div class="row">
                 <div class="col-md-12 text-center">
                     <div class="zebi text-b">
-                        <h1 >WELCOME <?php echo $_SESSION['userId']; ?><br> 
+                        <h1 >WELCOME <?php echo $_SESSION['naam']; ?><br> 
                             TO CODE WITH WFFLIX.
                         </h1>
                     </div>
