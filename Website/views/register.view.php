@@ -16,31 +16,28 @@
                         </div>
                         <div class="has_icon form-group name-group <?= isset($_SESSION["login_incorrect"]) ? 'error' : ''; ?>">
                             <span class="fa fa-user form-control-register"></span>
-                            <input name="gebruikersnaam" type="text" class="form-control form-control-sm"  id="loremipsum" placeholder="Gebruikersnaam" value="<?= isset($_POST["gebruikersnaam"]) ? $_POST["gebruikersnaam"] : ""?>">
+                            <input name="username" type="text" class="form-control form-control-sm"  id="loremipsum" placeholder="Username" value="<?= isset($_POST["Username"]) ? $_POST["gebruikersnaam"] : ""?>">
                         </div>
-
-                      
-
 
                         <div class=" has_icon form-group password-group">
                             <span class="fa fa-shield form-control-register"></span>
-                            <input type="text" name="wachtwoord" class="form-control form-control-sm"  id="loremipsum"   placeholder="wachtwoord">
+                            <input type="password" name="password" class="form-control form-control-sm"  id="loremipsum"   placeholder="Password">
                         </div>
 
                         <div class="has_icon form-group password-group">
                             <span class="fa fa-shield form-control-register"></span>
-                            <input type="text" name="bevestig_wachtwoord" class="form-control form-control-sm"  id="loremipsum"   placeholder="bevestig wachtwoord">
+                            <input type="password" name="confirm_password" class="form-control form-control-sm"  id="loremipsum"   placeholder="Confirm Password">
                         </div>
 
                          <div class="row">
                             <div class="col-md-12">
-                                <input type="submit" class="btn btn-primary register_button" value="Invoeren">
+                                <input type="submit" class="btn btn-primary register_button" value="submit">
                             </div>
                        </div>
 
                         <div class="row">
                             <div class="col-md-12 text-center text-block">
-                                 <p style="font-size: 13px;">already have a account? &nbsp;<a href='/login'>login</a>.</p>
+                                 <p style="font-size: 13px;">Already have a account? &nbsp;<a href='/login'>login</a>.</p>
                             </div>
                         </div>
                     </form>
