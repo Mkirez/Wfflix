@@ -7,16 +7,35 @@ session_destroy();
 <body>
 <meta http-equiv="refresh" content="3;url=/" />
 <?php include "includes/nav.view.php" ?>
-<section class="body">
-    <div class="col-md-6">
-        <div class="wrapper">
-            <div class="container-fluid" style="color: #FFCB05; font-family:'Calibri';">
-                <h1>U bent nu uitgelogd</h1>
 
+<div class="space">
+</div>
+
+<div class="space">
+</div>
+
+<div class="space">
+</div>
+
+<div class="w3-container w3-center w3-animate-left text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="zebi text-b">
+                    <h1 >je bent nu uitgelogd<br>
+                    </h1>
+                </div>
+            </div>
+            <div class="col-md-12 text-center">
+                <div class="gezeik text-b">
+                    <p>
+                        we zien je graag snel terug
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-</section>
+</div>
 <?php include "includes/footer.view.php" ?>
 </body>
 </html>

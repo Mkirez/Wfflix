@@ -26,7 +26,7 @@ include "includes/head.view.php"
     </div>
 </div>
 
-<div class="wrapper">
+
     <div class="container-fluid">
                 
         <div class="row" id="card">
@@ -60,7 +60,6 @@ Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.  </
                 </div>
         </div>
     </div>
-</div>
 
 <?php } ?>
 

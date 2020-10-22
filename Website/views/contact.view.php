@@ -34,7 +34,7 @@ include "includes/head.view.php";
                             <input type="text" class="form-control form-control-sm" id="loremipsum" name="email" placeholder="email">
                         </div>
                         <div class="form-group">
-                            <textarea name="bericht" class="form-control" id="loremipsum" rows="3"></textarea>
+                            <textarea name="bericht" class="form-control" id="loremipsum" rows="3" placeholder="lorem ipsum"></textarea>
                         </div>
                         <button type="submit" name="submit" class="btn btn-success" placeholder="lorem ipsum">Submit</button>
                         <!-- <?php if (isset($_POST['submit'])) { ?>

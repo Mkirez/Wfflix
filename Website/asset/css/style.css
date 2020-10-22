@@ -102,8 +102,9 @@ form{
   }
 
 .wrapper {
-    padding-top: 110px;
-    padding-bottom: 40px;
+    /*padding-top: 110px;
+    padding-bottom: 40px;*/
+    padding: 118px;
 }
 
 .img{

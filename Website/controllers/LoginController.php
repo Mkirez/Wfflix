@@ -3,6 +3,8 @@ class LoginController
 {
     public function index()
     {
+
+
         unset($_SESSION['login_incorrect']);
         if (isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"]) {
             header("location: /");
