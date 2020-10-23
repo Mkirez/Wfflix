@@ -2,9 +2,9 @@
 <!doctype html>
 <html lang="en">
 <?php $title = "Dashboard" ?>
-<?php include "includes/dashhead.view.php" ?>
+<?php include "includes/dashboardhead.view.php" ?>
 <body>
-    <?php include "includes/dashnav.view.php" ?>
+    <?php include "includes/dashboardnav.view.php" ?>
     <h3 style="text-align: left;">Dashboard</h3>
     <?php 
     ?>

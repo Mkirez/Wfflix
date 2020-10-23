@@ -114,9 +114,9 @@ class videoModel extends BaseModel
                     videobeschrijving = :videobeschrijving, 
                     image = :image,
                     video = :video,
-                    WHERE videoID = :videoID";
+                    WHERE id = :id";
         if ($stmt = $this->pdo->prepare($query)) :
-            $stmt->bindParam(':videoID', $videoID, PDO::PARAM_INT);
+            $stmt->bindValue(':videoID', $video->getId(), PDO::PARAM_INT);
             $stmt->bindValue(':naam_video', $video->getvideoName());
             $stmt->bindValue(':videobeschrijving', $video->getBeschrijving());
             $stmt->bindValue(':image', $video->getImage());

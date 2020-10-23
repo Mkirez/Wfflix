@@ -130,5 +130,15 @@ $router->define([
             'method' => 'delete'
         ]
     ],
+    'UPDATE' => [
+    '/admineditusers' => [
+    'controller' => 'UserEditorController',
+    'method' => 'editUser'
+        ],
+        '/admineditvideo' => [
+    'controller' => 'VideoEditorController',
+    'method' => 'editVideo'
+        ],
+    ],
 ]);
 

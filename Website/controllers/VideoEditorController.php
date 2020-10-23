@@ -13,6 +13,7 @@ class VideoEditorController
     {
         if (!empty($_POST["naam_video"]) and !empty($_POST["videobeschrijving"]) and !empty($_POST["image"]) and !empty($_POST["video"])) {
             $video = new videoModel();
+            $video->setId((int)trim($_POST["id"]));
             $video->setVideoName(trim($_POST["naam_video"]));
             $video->setBeschrijving(trim($_POST["videobeschrijving"]));
             $video->setImage(trim($_POST["image"]));

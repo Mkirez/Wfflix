@@ -20,7 +20,7 @@ class AdminLoginController
             header("location:/dashboard");
         } else {
             $_SESSION['login_incorrect'] = "Password or username not correct";
-            header('location:/login');
+            header('location:/admin');
             require 'views/login.view.php';
         }
     }

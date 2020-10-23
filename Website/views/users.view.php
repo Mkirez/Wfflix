@@ -2,9 +2,9 @@
 <!doctype html>
 <html lang="en">
 <?php $title = "Users" ?>
-<?php include "includes/dashhead.view.php" ?>
+<?php include "includes/dashboardhead.view.php" ?>
 <body>
-<?php include "includes/dashnav.view.php" ?>
+<?php include "includes/dashboardnav.view.php" ?>
 
 <div id="weergaveUsers" class="form-group">
     <table id="Usertable" border="1" class="table-sm table-striped table-bordered" style="width:100%; height:60px;">
