@@ -317,6 +317,15 @@ img {
 color: blue;
 
 }
+.not-loggedin {
+color: white;
+
+}
+
+.jumbotron{
+  background-color: #14141482!important;
+
+}
 
 .not-loggedin a:hover{
 color: yellow;

@@ -58,7 +58,7 @@ Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.  </
                 <div class="col-md-12 text-center not-loggedin">
                     <h1><a href="/login" >log in&nbsp;</a>om de courses te bekijken</h1>
                 </div>
-        </div>
+            </div>
     </div>
 
 <?php } ?>

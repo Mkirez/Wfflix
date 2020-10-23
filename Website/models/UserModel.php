@@ -60,7 +60,7 @@ class UserModel extends BaseModel
         $query = "SELECT * FROM gebruikers WHERE gebruikersnaam = '$username'";
 
         if ($stmt = $this->pdo->prepare($query)) :
-           // $stmt->bindParam(':username', $username, PDO::PARAM_INT);
+           $stmt->bindParam(':username', $username, PDO::PARAM_INT);
             $stmt->execute();
             $data = $stmt->fetch();
             if($data !== false) :
