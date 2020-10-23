@@ -2,9 +2,6 @@
 	box-sizing: content-box;
 }
 
-
-
-
 body { 
     background: url('../img/background.jpeg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -219,7 +216,7 @@ img {
     
 }
 .card-text{
-  color: whit;
+  color: white;
 }
 .card-text p {
   font-size: 9px;
@@ -255,7 +252,7 @@ img {
 }
 
 .under-wrapper{
-  background-color: transparent gray;
+  background-color: transparent;
 }
 
 .inner2 {
@@ -278,7 +275,6 @@ img {
     height: 2.375rem;
     line-height: 2.375rem;
     text-align: center;
-    pointer-events: ;
     color: #aaa;
 }
 
@@ -298,7 +294,6 @@ img {
     height: 2.375rem;
     line-height: 2.375rem;
     text-align: center;
-    pointer-events: ;
     color: #aaa;
 }
 
@@ -310,7 +305,6 @@ img {
     height: 2.375rem;
     line-height: 2.375rem;
     text-align: center;
-    pointer-events: ;
     color: #aaa;
 }
 .not-loggedin a{

@@ -47,9 +47,9 @@ class videoModel extends BaseModel
 
     public function fetchById($id)
     {
-        $query = "SELECT * FROM video where videoID = :id";
+        $query = "SELECT * FROM video where videoID = :videoID";
         $stmt = $this->pdo->prepare($query);
-        $stmt->bindParam(':id',$id,PDO::PARAM_INT);
+        $stmt->bindParam(':videoID',$videoID,PDO::PARAM_INT);
         $stmt->execute();
         $data = $stmt->fetch();
         if ($data){
@@ -65,8 +65,79 @@ class videoModel extends BaseModel
         }
     }
 
+    public function all()
+    {
+        $query = 'SELECT * FROM video';
+        $stmt = $this->pdo->prepare($query);
+        $stmt->execute();
+        $result = array();
+        while($data = $stmt->fetch())
+        {
+            $video = new VideoModel();
+            $video->load($data);
+            $result[]=$video;
+        }
 
-    
+        return $result;
+    }
+
+    private function load($data)
+    {
+        $this->setID($data['videoID']);
+        $this->setVideoName($data['naam_video']);
+        $this->setBeschrijving($data['videobeschrijving']);
+        $this->setImage($data['image']);
+        $this->setVideo($data['video']);
+    }
+
+    public function delete($videoID)
+    {
+        if ($videoID != null) {
+            $stmt = $this->pdo->prepare('SELECT * FROM video WHERE videoID = ?');
+            $stmt->execute([$videoID]);
+            $video = $stmt->fetch(PDO::FETCH_ASSOC);
+            if (!$video) {
+                return "0";
+            }
+            $stmt = $this->pdo->prepare('DELETE FROM video WHERE videoID = ?');
+            $stmt->execute([$videoID]);
+            return "1";
+        } else {
+            return "0";
+        }
+    }
+
+    public function updateVideo(VideoModel $video)
+    {
+        $query = "UPDATE video SET 
+                    videoName = :naam_video, 
+                    videobeschrijving = :videobeschrijving, 
+                    image = :image,
+                    video = :video,
+                    WHERE videoID = :videoID";
+        if ($stmt = $this->pdo->prepare($query)) :
+            $stmt->bindParam(':videoID', $videoID, PDO::PARAM_INT);
+            $stmt->bindValue(':naam_video', $video->getvideoName());
+            $stmt->bindValue(':videobeschrijving', $video->getBeschrijving());
+            $stmt->bindValue(':image', $video->getImage());
+            $stmt->bindValue(':video', $video->getVideo());
+            return $stmt->execute();
+        endif;
+        return false;
+    }
+
+    public function store(videoModel $video)
+    {
+        $query = "INSERT INTO video (videoName, videobeschrijving, image, video) VALUES (:videoName, :videobeschrijving, :image, :video)";
+        if ($stmt = $this->pdo->prepare($query)) :
+            $stmt->bindValue(':naam_video', $video->getvideoName());
+            $stmt->bindValue(':videobeschrijving', $video->getBeschrijving());
+            $stmt->bindValue(':image', $video->getImage());
+            $stmt->bindValue(':video', $video->getVideo());
+            return $stmt->execute();
+        endif;
+        return false;
+    }
     /**
      * @return int
      */
