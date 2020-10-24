@@ -6,21 +6,8 @@ class CourseController
 	
     public function index()
     {
-
-
     	$videos = new videoModel();
-
     	$videos = $videos->fetchall();
-
-
-
-
-    	 // print_r($videos);
-      //            die();
-
-
-
-
         require 'views/course.view.php';
     }
 
@@ -32,7 +19,12 @@ class CourseController
         $video = $videos->fetchById($id);
         if($video == null)
             die("404");
-        
+
+        //Add User Watch
+        if(!(new WatchModel())->CheckWatched($video->getId(),$_SESSION['user_id'])) {
+            (new WatchModel())->insertWatch($video->getId(), $_SESSION['user_id']);
+        }
+
         if( $videos->fetchById($id + 1) != null){
             $next = "/video?id=" . $videos->fetchById($id + 1)->getId();
         }

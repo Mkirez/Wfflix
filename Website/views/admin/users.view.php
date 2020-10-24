@@ -29,6 +29,7 @@
             </th>
         </tr>
     </table>
+
     <table id="UserContent" border=1 class="table-sm" style="width:100%">
         <?php foreach ($users as $userInfo) { ?>
             <tr id="user_<?= $userInfo->getId(); ?>">

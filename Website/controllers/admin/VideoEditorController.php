@@ -6,7 +6,7 @@ class VideoEditorController
     {
         $model = new VideoModel();
         $video = $model->all();
-        require 'views/admineditvideo.view.php';
+        require 'views/admin/admineditvideo.view.php';
     }
 
     public function editVideo()

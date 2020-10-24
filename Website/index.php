@@ -13,9 +13,8 @@ require "core/config.php";
  */
 require 'models/BaseModel.php';
 require 'models/UserModel.php';
-require 'models/videoModel.php';
-
-
+require 'models/VideoModel.php';
+require 'models/WatchModel.php';
 
 
 /**
@@ -29,12 +28,12 @@ require 'controllers/LoginController.php';
 require 'controllers/LogoutController.php';
 require 'controllers/CourseController.php';
 require 'controllers/DashboardController.php';
-require 'controllers/AdminLoginController.php';
-require 'controllers/AdminLogoutController.php';
-require 'controllers/AdminVideoController.php';
-require 'controllers/AdminUsersController.php';
-require 'controllers/VideoEditorController.php';
-require 'controllers/UserEditorController.php';
+require 'controllers/admin/AdminLoginController.php';
+require 'controllers/admin/AdminLogoutController.php';
+require 'controllers/admin/AdminVideoController.php';
+require 'controllers/admin/AdminUsersController.php';
+require 'controllers/admin/VideoEditorController.php';
+require 'controllers/admin/UserEditorController.php';
 
 
 //html video pages
@@ -51,9 +50,6 @@ require 'controllers/PhpincludeController.php';
 require 'controllers/JsfundamentalsController.php';
 require 'controllers/JsvariablesController.php';
 require 'controllers/JsdatatypesController.php';
-
-
-
 
 
 require 'core/Router.php';
