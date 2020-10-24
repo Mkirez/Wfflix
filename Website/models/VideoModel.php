@@ -45,11 +45,11 @@ class videoModel extends BaseModel
     }
 
 
-    public function fetchById($id)
+     public function fetchById($id)
     {
-        $query = "SELECT * FROM video where videoID = :videoID";
+        $query = "SELECT * FROM video where videoID = :id";
         $stmt = $this->pdo->prepare($query);
-        $stmt->bindParam(':videoID',$videoID,PDO::PARAM_INT);
+        $stmt->bindParam(':id',$id,PDO::PARAM_INT);
         $stmt->execute();
         $data = $stmt->fetch();
         if ($data){
@@ -64,7 +64,6 @@ class videoModel extends BaseModel
             return null;
         }
     }
-
     public function all()
     {
         $query = 'SELECT * FROM video';
