@@ -6,7 +6,7 @@ class UserEditorController
     {
         $model = new UserModel();
         $users = $model->all();
-        require 'views/admineditusers.view.php';
+        require 'views/admin/admineditusers.view.php';
     }
 
     public function editUser()

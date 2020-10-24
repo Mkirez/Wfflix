@@ -7,7 +7,11 @@ class AdminVideoController
     {
         $model = new videoModel();
         $products = $model->all();
-        require 'views/adminvideo.view.php';
+        require 'views/admin/adminvideo.view.php';
+    }
+
+    public function create(){
+        require 'views/admin/video_create.view.php';
     }
 
     public function delete()

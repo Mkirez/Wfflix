@@ -6,6 +6,12 @@
 <body>
 <?php include "includes/dashboardnav.view.php" ?>
 
+<section id="page-title">
+    <div class="container clearfix">
+        <h1 class="float-left">Videos</h1>
+        <a class="button button-3d float-right" href="/adminvideo/create">Add Video</a>
+    </div>
+</section>
 <div id="weergaveVideos" class="form-group">
     <table id="VideoTable" border="1" class="table-sm table-striped table-bordered" style="width:100%; height:60px;">
         <tr>
@@ -90,35 +96,6 @@
             }
         });
     </script>
-<section class="body">
-    <div class="col-md-6">
-        <div class="wrapper">
-            <h2 class="card-header">Add Video</h2>
-            <form action="/adminvideo" method="post" class="card-body border">
-                <div class="form-group">
-                    <label>Videonaam</label>
-                    <input type="text" name="naam_video" class="form-control form-control-sm"
-                           value="<?= isset($_POST["naam_video"]) ? $_POST["naam_video"] : "" ?>">
-                </div>
-                <div class="form-group">
-                    <label>Video beschrijving</label>
-                    <input type="text" name="videobeschrijving" class="form-control form-control-sm"
-                </div>
-                <div class="form-group">
-                    <label>Video afbeelding</label>
-                    <input type="image" name="image" class="form-control form-control-sm">
-                </div>
-                <div class="form-group">
-                    <label>Video</label>
-                    <input type="file" name="video" class="form-control form-control-sm">
-                </div>
-                <div class="form-group">
-                    <input type="submit" class="btn btn-primary" value="Submit">
-                    <input type="reset" class="btn btn-default" value="Reset">
-                </div>
-            </form>
-        </div>
-</section>
 </body>
 </html>
 <!-- <?php } else {header('location:/dashboard');} ?> -->

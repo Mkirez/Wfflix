@@ -81,14 +81,22 @@ $router->define([
             'controller' => 'AdminVideoController',
             'method' => 'index'
         ],
-        '/admineditusers' => [
+        '/adminusers/edit' => [
             'controller' => 'UserEditorController',
             'method' => 'index'
         ],
-        '/admineditvideo' => [
+        '/adminvideo/edit' => [
             'controller' => 'VideoEditorController',
             'method' => 'index'
-        ]
+        ],
+        '/adminvideo/create' => [
+            'controller' => 'AdminVideoController',
+            'method' => 'create'
+        ],
+        '/adminusers/create' => [
+            'controller' => 'AdminUsersController',
+            'method' => 'create'
+        ],
     ],
     'POST' => [
         '/login' => [
@@ -103,39 +111,39 @@ $router->define([
             'controller' => 'ContactController',
             'method' => 'Sendemail'
         ],
-        '/admineditusers' => [
+        '/admineditusers/edit' => [
             'controller' => 'UserEditorController',
             'method' => 'editUser'
         ],
-        '/admineditproducts' => [
+        '/admineditproducts/edit' => [
             'controller' => 'VideoEditorController',
             'method' => 'editProduct'
         ],
-        '/users' => [
+        '/adminusers/add' => [
             'controller' => 'AdminUsersController',
             'method' => 'AddUser'
         ],
-        '/products' => [
+        '/adminvideo/add' => [
             'controller' => 'AdminVideoController',
-            'method' => 'AddProduct'
+            'method' => 'AddVideo'
         ],
     ],
     'DELETE' => [
-        '/users' => [
+        '/adminusers/delete' => [
             'controller' => 'AdminUsersController',
             'method' => 'delete'
         ],
-        '/products' => [
+        '/adminvideo/delete' => [
             'controller' => 'AdminVideoController',
             'method' => 'delete'
         ]
     ],
     'UPDATE' => [
-    '/admineditusers' => [
+    '/adminusers/edit' => [
     'controller' => 'UserEditorController',
     'method' => 'editUser'
         ],
-        '/admineditvideo' => [
+        '/adminvideo/edit' => [
     'controller' => 'VideoEditorController',
     'method' => 'editVideo'
         ],

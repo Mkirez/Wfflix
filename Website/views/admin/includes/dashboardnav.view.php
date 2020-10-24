@@ -1,15 +1,15 @@
 <div class="container-fluid">
-    <div class="row">
+    <div class="form-row">
         <div class="col-md-12 no-padding">
-            <li class="nav-item">
+            <p class="nav-item">
                 <a class="nav-link" href="/logout">Logout</a>
-            </li>
-            <li class="nav-item">
+            </p>
+            <p class="nav-item">
                 <a class="nav-link" href="/users">Users</a>
-            </li>
-            <li class="nav-item">
+            </p>
+            <p class="nav-item">
                 <a class="nav-link" href="/adminvideo">Video's</a>
-            </li>
+            </p>
         </div>
     </div>
 </div>

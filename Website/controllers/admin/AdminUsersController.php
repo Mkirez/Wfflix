@@ -7,7 +7,11 @@ class AdminUsersController
     {
         $model = new UserModel();
         $users = $model->all();
-        require 'views/users.view.php';
+        require 'views/admin/adminusers.view.php';
+    }
+
+    public function create(){
+        require 'views/admin/users_create.view.php';
     }
 
     public function delete()

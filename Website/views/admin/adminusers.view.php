@@ -6,6 +6,12 @@
 <body>
 <?php include "includes/dashboardnav.view.php" ?>
 
+<section id="page-title">
+    <div class="container clearfix">
+        <h1 class="float-left">Users</h1>
+        <a class="button button-3d float-right" href="/adminusers/create">Add User</a>
+    </div>
+</section>
 <div id="weergaveUsers" class="form-group">
     <table id="Usertable" border="1" class="table-sm table-striped table-bordered" style="width:100%; height:60px;">
         <tr>
@@ -32,24 +38,24 @@
     <table id="UserContent" border=1 class="table-sm" style="width:100%">
         <?php foreach ($users as $userInfo) { ?>
             <tr id="user_<?= $userInfo->getId(); ?>">
-                <td style="white-space: nowrap; text-overflow:ellipsis; overflow: hidden; max-width:1px;">
+                <td>
                     <?= $userInfo->getUsername(); ?>
                 </td>
-                <td style="white-space: nowrap; text-overflow:ellipsis; overflow: hidden; max-width:1px;">
+                <td>
                     <?= $userInfo->getPassword(); ?>
                 </td>
-                <td style="white-space: nowrap; text-overflow:ellipsis; overflow: hidden; max-width:1px;">
+                <td>
                     <?= $userInfo->getCreatedAt(); ?>
                 </td>
-                <td style="white-space: nowrap; text-overflow:ellipsis; overflow: hidden; max-width:1px;">
+                <td>
                     <?= $userInfo->getUpdatedAt(); ?>
                 </td>
-                <td style="white-space: nowrap; text-overflow:ellipsis; overflow: hidden; max-width:1px;">
+                <td>
                     <button data-user_id="<?= $userInfo->getId(); ?>"
                             data-user_name="<?= $userInfo->getUsername(); ?>"
                             class="edit_user">Edit User</button>
                 </td>
-                <td style="white-space: nowrap; text-overflow:ellipsis; overflow: hidden; max-width:1px;">
+                <td>
                     <button data-user_id="<?= $userInfo->getId(); ?>"
                             data-user_name="<?= $userInfo->getUsername(); ?>"
                             class="delete_user">Delete User</button>
@@ -88,26 +94,6 @@
             }
         });
     </script>
-<section class="body">
-    <div class="col-md-6">
-        <div class="wrapper">
-            <h2 class="card-header">Add user</h2>
-            <form action="/users" method="post" class="card-body border">
-                <div class="form-group">
-                    <label>Username</label>
-                    <input type="text" name="gebruikersnaam" class="form-control form-control-sm">
-                </div>
-                <div class="form-group">
-                    <label>Password</label>
-                    <input type="password" name="wachtwoord" class="form-control form-control-sm">
-                </div>
-                <div class="form-group">
-                    <input type="submit" class="btn btn-primary" value="Submit">
-                    <input type="reset" class="btn btn-default" value="Reset">
-                </div>
-            </form>
-        </div>
-</section>
 </body>
 </html>
 <!-- <?php } else {
