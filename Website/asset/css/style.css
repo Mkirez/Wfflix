@@ -2,13 +2,11 @@
 	box-sizing: content-box;
 }
 
-html{
-  scroll-behavior: smooth;
-}
 
 html, body {
     overflow: auto;
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 body { 
