@@ -45,7 +45,6 @@ include "includes/head.view.php";
             </div>
             <div class="col-md-6 img">
                 <div class="inner">
-
                     <img src="/asset/img/image.jpeg">
                 </div>
             </div>

@@ -79,7 +79,7 @@ include "includes/head.view.php"
         <div class="row">
             <div class="col-md-12 no-padding">
                 <div class="card">
-                  <img class="" src="../asset/img/apple_imac_free_mockup.png" alt="Card image">
+                  <img class="under-card-image" src="../asset/img/apple_imac_free_mockup.png" alt="Card image" >
 
                       <div  id="wrapper2">
                         <div class="inner-wrapper">
@@ -110,7 +110,7 @@ include "includes/head.view.php"
         </div>
     </div>
 
-    
+
 
 <?php } ?>
 

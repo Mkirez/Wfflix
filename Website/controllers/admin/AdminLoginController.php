@@ -7,7 +7,7 @@ class AdminLoginController
             header("location:/dashboard");
             exit;
         }
-        require 'views/login.view.php';
+        require 'views/admin/login.view.php';
     }
 
     public function login(){

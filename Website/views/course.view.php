@@ -37,7 +37,8 @@ include "includes/head.view.php"
                   <a href="/video?id=<?= $video->getId(); ?>">
                         <img src="<?= $video->getImage(); ?>">
                     </a>
-                    <h2 class="text-white"><b><?= $video->getVideoname(); ?></b></h2> 
+                    <h2 class="text-white"><b><?= $video->getVideoname(); ?></b></h2>
+                    <p><?php if((new WatchModel())->CheckWatched($video->getId(),$_SESSION['user_id'])) { ?> Watched <?php }else{ ?> Unwatched <?php } ?> </p>
                     <p class="text-white">Lorem Ipsum
 Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.  </p>        
                 </div>
