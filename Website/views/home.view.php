@@ -79,7 +79,9 @@ include "includes/head.view.php"
         <div class="row">
             <div class="col-md-12 no-padding">
                 <div class="card">
-                  <img class="" src="../asset/img/apple_imac_free_mockup.png" alt="Card image">
+                  <img class="under-card-image" src="../asset/img/apple_imac_free_mockup.png" alt="Card image" style="
+    opacity: 0.3; background-color: black;
+">
 
                       <div  id="wrapper2">
                         <div class="inner-wrapper">
@@ -98,7 +100,7 @@ include "includes/head.view.php"
                                         </div>
                                         <div class="col-md-12">
 
-                                         <a href="/register" type="button" class="btn btn-outline-success btn-lg" id="space-button1">register!</a>
+                                         <a href="/register" type="button" class="btn btn-success btn-lg" id="space-button1">register!</a>
                                         </div>
                                     </div>
                                 </div>
@@ -110,7 +112,7 @@ include "includes/head.view.php"
         </div>
     </div>
 
-    
+
 
 <?php } ?>
 
