@@ -1,19 +1,26 @@
 *{
-	box-sizing: content-box;
+	box-sizing: border-box;
 }
 
 
-html, body {
-    overflow: auto;
+body, html {
+    color: #000;
+    margin: 0;
+    padding: 0;
     height: 100%;
-    scroll-behavior: smooth;
+    font-family: 'Titillium Web', arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    overflow-y: visible;
 }
+
 
 body { 
     background: url('../img/background.jpeg') no-repeat ;
-  
+      
+
     background-size: cover;
-    
    
     
 
