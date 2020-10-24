@@ -2,20 +2,26 @@
 	box-sizing: content-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
 
-
+html, body {
+    overflow: auto;
+    height: 100%;
+}
 
 body { 
-    background: url('../img/background.jpeg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background: url('../img/background.jpeg') no-repeat ;
+  
     background-size: cover;
+   
+    
+
+
 }
 
-.buttons{
-   /* border:1px solid red;*/
-}
+
 .buttons a {
     border: 0px solid yellow;
     padding: 11px;
@@ -104,7 +110,8 @@ form{
 .wrapper {
     /*padding-top: 110px;
     padding-bottom: 40px;*/
-    padding: 118px;
+    /*padding: 118px;*/
+        padding: 138px;
 }
 
 .img{
@@ -401,4 +408,57 @@ background-color:rgba(48, 48, 48, 1);
 #searchbalk input:focus{
   background-color: white!important;
  color: gray;
+}
+
+
+.scroll {   
+    font-size: 30px!important;
+    color: white!important;
+    
+    
+   -webkit-animation: scrolling 3s ease infinite;
+   -moz-animation: scrolling 3s ease infinite;
+   -o-animation: scrolling 3s  ease infinite;
+   animation: scrolling 3s ease infinite;
+
+
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translate(0);
+  }
+ 
+  50% {
+    transform: translate(0,40px);
+  }
+
+ 
+  100% {
+     transform: translate(0);
+  }
+}
+
+
+
+.inner-wrapper {
+    position: absolute;
+    top: 33%;
+    color: black;
+    width: 100%;
+    display: inline-block;
+}
+
+
+#space-button1{
+      margin-top: 40px;
+
+  
+}
+
+
+@media screen and (max-width: 480px) {
+  body {
+    display: none;
+  }
 }
