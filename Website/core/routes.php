@@ -69,6 +69,26 @@ $router->define([
             'controller' => 'LogoutController',
             'method' => 'index'
         ],
+        '/users' => [
+            'controller' => 'AdminUsersController',
+            'method' => 'index'
+        ],
+        '/dashboard' => [
+            'controller' => 'DashboardController',
+            'method' => 'index'
+        ],
+        '/adminvideo' => [
+            'controller' => 'AdminVideoController',
+            'method' => 'index'
+        ],
+        '/admineditusers' => [
+            'controller' => 'UserEditorController',
+            'method' => 'index'
+        ],
+        '/admineditvideo' => [
+            'controller' => 'VideoEditorController',
+            'method' => 'index'
+        ]
     ],
     'POST' => [
         '/login' => [
@@ -83,6 +103,42 @@ $router->define([
             'controller' => 'ContactController',
             'method' => 'Sendemail'
         ],
-    ]
+        '/admineditusers' => [
+            'controller' => 'UserEditorController',
+            'method' => 'editUser'
+        ],
+        '/admineditproducts' => [
+            'controller' => 'VideoEditorController',
+            'method' => 'editProduct'
+        ],
+        '/users' => [
+            'controller' => 'AdminUsersController',
+            'method' => 'AddUser'
+        ],
+        '/products' => [
+            'controller' => 'AdminVideoController',
+            'method' => 'AddProduct'
+        ],
+    ],
+    'DELETE' => [
+        '/users' => [
+            'controller' => 'AdminUsersController',
+            'method' => 'delete'
+        ],
+        '/products' => [
+            'controller' => 'AdminVideoController',
+            'method' => 'delete'
+        ]
+    ],
+    'UPDATE' => [
+    '/admineditusers' => [
+    'controller' => 'UserEditorController',
+    'method' => 'editUser'
+        ],
+        '/admineditvideo' => [
+    'controller' => 'VideoEditorController',
+    'method' => 'editVideo'
+        ],
+    ],
 ]);
 
