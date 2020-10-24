@@ -76,7 +76,7 @@ include "includes/head.view.php"
 
 
 <div class="card bg-dark text-white">
-  <img class="card-img" src="../asset/img/Inkedapple_imac_free_mockup_LI.jpg" alt="Card image">
+  <img class="card-img" src="../asset/img/apple_imac_free_mockup.png" alt="Card image">
 
       <div class="card-img-overlay" id="wrapper2">
         <div class="inner-wrapper">
