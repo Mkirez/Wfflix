@@ -84,9 +84,6 @@ class UserModel extends BaseModel
                 $this->password = $data['wachtwoord'];
                 $this->createdAt = $data['created_at'];
                 $this->updatedAt = $data['updated_at'];
-
-               //echo $this->username;
-               // exit;
             endif;
         endif;
     }

@@ -24,12 +24,18 @@ class LoginController
     public function login(){
         // POST LOGIN
         $user =  new UserModel();
-        $user->find2($_POST['username']);
-        if (password_verify($_POST['password'],$user->getPassword())){
-            $_SESSION['loggedIn'] = true;
-            $_SESSION['user_id'] = $user->getId();
-            $_SESSION['naam'] = $user->getUserName();
-            header("location: /");
+        if(!$user->checkExistingUsername($_POST['username'])){
+            $user->find2($_POST['username']);
+            if (password_verify($_POST['password'],$user->getPassword())){
+                $_SESSION['loggedIn'] = true;
+                $_SESSION['user_id'] = $user->getId();
+                $_SESSION['naam'] = $user->getUserName();
+                header("location: /");
+            } else {
+                $_SESSION['login_incorrect'] = "Password or username not correct";
+                header('location: /login');
+                require 'views/login.view.php';
+            }
         } else {
             $_SESSION['login_incorrect'] = "Password or username not correct";
             header('location: /login');

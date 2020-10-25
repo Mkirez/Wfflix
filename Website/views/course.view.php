@@ -38,9 +38,7 @@ include "includes/head.view.php"
                         <img src="<?= $video->getImage(); ?>">
                     </a>
                     <h2 class="text-white"><b><?= $video->getVideoname(); ?></b></h2>
-                    <p><?php if((new WatchModel())->CheckWatched($video->getId(),$_SESSION['user_id'])) { ?> Watched <?php }else{ ?> Unwatched <?php } ?> </p>
-                    <p class="text-white">Lorem Ipsum
-Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.  </p>        
+                    <p class="text-white"><?php if((new WatchModel())->CheckWatched($video->getId(),$_SESSION['user_id'])) { ?> Watched <?php }else{ ?> Unwatched <?php } ?> </p>
                 </div>
             </div>
         <?php } ?>
@@ -52,7 +50,6 @@ Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.  </
 <?php }else{ ?>
     <div class="space">
     </div>
-
     <div class="container ">
         <div class="jumbotron">
             <div class="row">

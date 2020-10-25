@@ -9,12 +9,18 @@ class AdminAuthController
     public function login(){
         // POST LOGIN
         $user =  new UserModel();
-        $user->findByEmail($_POST['username']);
-        if (password_verify($_POST['password'],$user->getPassword())){
-            $_SESSION['loggedIn'] = true;
-            $_SESSION['ADMIN_USER'] = true;
-            $_SESSION['userId'] = $user->getId();
-            header("location:/admin/dashboard");
+        if(!$user->checkExistingUsername($_POST['username'])) {
+            $user->findByEmail($_POST['username']);
+            if (password_verify($_POST['password'], $user->getPassword())) {
+                $_SESSION['loggedIn'] = true;
+                $_SESSION['ADMIN_USER'] = true;
+                $_SESSION['userId'] = $user->getId();
+                header("location:/admin/dashboard");
+            } else {
+                $_SESSION['login_incorrect'] = "Password or username not correct";
+                header('location:/admin/login');
+                require 'views/admin/auth/login.view.php';
+            }
         } else {
             $_SESSION['login_incorrect'] = "Password or username not correct";
             header('location:/admin/login');
