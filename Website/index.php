@@ -1,6 +1,10 @@
 <?php
-ini_set('display_errors', 1);
+//Exclude File extensions from routes
+if (preg_match('/\.(?:png|jpg|jpeg|gif|css|min.js|js)$/', $_SERVER["REQUEST_URI"])) {
+    return false;    // serve the requested resource as-is.
+}
 
+ini_set('display_errors', 1);
 session_start();
 
 /**
@@ -13,10 +17,8 @@ require "core/config.php";
  */
 require 'models/BaseModel.php';
 require 'models/UserModel.php';
-require 'models/videoModel.php';
+require 'models/VideoModel.php';
 require 'models/WatchModel.php';
-
-
 
 /**
  * Controllers
@@ -29,32 +31,9 @@ require 'controllers/LoginController.php';
 require 'controllers/LogoutController.php';
 require 'controllers/CourseController.php';
 require 'controllers/admin/DashboardController.php';
-require 'controllers/admin/AdminLoginController.php';
-require 'controllers/admin/AdminLogoutController.php';
+require 'controllers/admin/AdminAuthController.php';
 require 'controllers/admin/AdminVideoController.php';
 require 'controllers/admin/AdminUsersController.php';
-require 'controllers/admin/VideoEditorController.php';
-require 'controllers/admin/UserEditorController.php';
-
-
-//html video pages
-require 'controllers/HtmllearnController.php';
-require 'controllers/CsslearnController.php';
-require 'controllers/HtmlcsslearnController.php';
-
-//php videos pages
-require 'controllers/PhpintroController.php';
-require 'controllers/PhpsyntaxController.php';
-require 'controllers/PhpincludeController.php';
-
-//js video pages
-require 'controllers/JsfundamentalsController.php';
-require 'controllers/JsvariablesController.php';
-require 'controllers/JsdatatypesController.php';
-
-
-
-
 
 require 'core/Router.php';
 

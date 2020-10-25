@@ -2,5 +2,5 @@
 
 define('DB_SERVER', 'localhost');
 define('DB_USERNAME', 'root');
-define('DB_PASSWORD', 'St34ck5#Nice');
-define('DB_NAME', 'wfdomp');
+define('DB_PASSWORD', '12321FurryGu1de%1');
+define('DB_NAME', 'wiffix');

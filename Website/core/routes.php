@@ -17,6 +17,10 @@ $router->define([
             'controller' => 'LoginController',
             'method' => 'index'
         ],
+        '/admin/login' => [
+            'controller' => 'AdminAuthController',
+            'method' => 'index'
+        ],
         '/register' => [
             'controller' => 'RegisterController',
             'method' => 'index'
@@ -29,73 +33,41 @@ $router->define([
             'controller' => 'CourseController',
             'method' => 'show'
         ],
-        '/html_learn' => [
-            'controller' => 'HtmllearnController',// courses pagina(html video )
-            'method' => 'index'
-        ],
-        '/css_learn' => [
-            'controller' => 'CsslearnController',// courses pagina(css learn video)
-            'method' => 'index'
-        ],
-        '/html&css' => [
-            'controller' => 'HtmlcsslearnController',// courses pagina(html en css full course)
-            'method' => 'index'
-        ],
-        '/phpintro' => [
-            'controller' => 'PhpintroController',// courses pagina(php intro video )
-            'method' => 'index'
-        ],
-        '/phpsyntax' => [
-            'controller' => 'PhpsyntaxController',// courses pagina(php syntax video )
-            'method' => 'index'
-        ],
-         '/phpinclude' => [
-            'controller' => 'PhpincludeController',// courses pagina(php syntax video )
-            'method' => 'index'
-        ],
-        '/jsfundamentals' => [
-            'controller' => 'JsfundamentalsController',// courses pagina(php syntax video )
-            'method' => 'index'
-        ],
-        '/jsvariables' => [
-            'controller' => 'JsvariablesController',// courses pagina(php syntax video )
-            'method' => 'index'
-        ],
-        '/jsdatatypes' => [
-            'controller' => 'JsdatatypesController',// courses pagina(php syntax video )
-            'method' => 'index'
-        ],
         '/logout' => [
             'controller' => 'LogoutController',
             'method' => 'index'
         ],
-        '/users' => [
-            'controller' => 'AdminUsersController',
-            'method' => 'index'
+        '/admin/logout' => [
+            'controller' => 'AdminAuthController',
+            'method' => 'logout'
         ],
-        '/dashboard' => [
+        '/admin/dashboard' => [
             'controller' => 'DashboardController',
             'method' => 'index'
         ],
-        '/adminvideo' => [
-            'controller' => 'AdminVideoController',
+        '/admin/users' => [
+            'controller' => 'AdminUsersController',
             'method' => 'index'
         ],
-        '/adminusers/edit' => [
-            'controller' => 'UserEditorController',
-            'method' => 'index'
-        ],
-        '/adminvideo/edit' => [
-            'controller' => 'VideoEditorController',
-            'method' => 'index'
-        ],
-        '/adminvideo/create' => [
-            'controller' => 'AdminVideoController',
-            'method' => 'create'
-        ],
-        '/adminusers/create' => [
+        '/admin/users/create' => [
             'controller' => 'AdminUsersController',
             'method' => 'create'
+        ],
+        '/admin/users/edit' => [
+            'controller' => 'AdminUsersController',
+            'method' => 'edit'
+        ],
+        '/admin/videos' => [
+            'controller' => 'AdminVideoController',
+            'method' => 'index'
+        ],
+        '/admin/video/create' => [
+            'controller' => 'AdminVideoController',
+            'method' => 'create'
+        ],
+        '/admin/video/edit' => [
+            'controller' => 'AdminVideoController',
+            'method' => 'edit'
         ],
     ],
     'POST' => [
@@ -111,42 +83,36 @@ $router->define([
             'controller' => 'ContactController',
             'method' => 'Sendemail'
         ],
-        '/admineditusers/edit' => [
-            'controller' => 'UserEditorController',
-            'method' => 'editUser'
+        '/admin/login' => [
+            'controller' => 'AdminAuthController',
+            'method' => 'login'
         ],
-        '/admineditproducts/edit' => [
-            'controller' => 'VideoEditorController',
-            'method' => 'editProduct'
-        ],
-        '/adminusers/add' => [
+        '/admin/users/add' => [
             'controller' => 'AdminUsersController',
             'method' => 'AddUser'
         ],
-        '/adminvideo/add' => [
+        '/admin/users/edit' => [
+            'controller' => 'AdminUsersController',
+            'method' => 'editUser'
+        ],
+        '/admin/video/add' => [
             'controller' => 'AdminVideoController',
             'method' => 'AddVideo'
         ],
+        '/admin/video/edit' => [
+            'controller' => 'AdminVideoController',
+            'method' => 'editVideo'
+        ],
     ],
     'DELETE' => [
-        '/adminusers/delete' => [
+        '/admin/users/delete' => [
             'controller' => 'AdminUsersController',
             'method' => 'delete'
         ],
-        '/adminvideo/delete' => [
+        '/admin/video/delete' => [
             'controller' => 'AdminVideoController',
             'method' => 'delete'
         ]
-    ],
-    'UPDATE' => [
-    '/adminusers/edit' => [
-    'controller' => 'UserEditorController',
-    'method' => 'editUser'
-        ],
-        '/adminvideo/edit' => [
-    'controller' => 'VideoEditorController',
-    'method' => 'editVideo'
-        ],
     ],
 ]);
 

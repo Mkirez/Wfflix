@@ -2,31 +2,13 @@
 	box-sizing: border-box;
 }
 
-
-
-
-
-
-
-
-
 html{
   scroll-behavior: smooth;
 }
-
-
-
 body { 
     background: url('../img/background.jpeg') no-repeat ;
-      
-
     background-size: cover;
-   
-    
-
-
 }
-
 
 .buttons a {
     border: 0px solid yellow;
@@ -52,20 +34,12 @@ body {
     width: 100%;
 }
 
-
-
 .image{
 	width: 100%;
 }
 .image img {
     width: 22%;
-
 }
-/*.btn_login{
-	border-radius: 10px;
-	background-color: white!important;
-	width:100%;
-}*/
 
 .register {
     background-color: yellow;
@@ -76,13 +50,10 @@ body {
     text-decoration: none!important;
     color: yellow;
     transition: 1s;
-
-
 }
 .card{
   background-color: #242424!important;
 }
-
 
 form{
 	padding: 40px;
@@ -168,16 +139,19 @@ textarea.form-control {
     padding-left: 49px!important;
 }
 
+.navbar .logo-header a{
+    color: black;
+    text-decoration: none;
+}
 
-
-
-/*sasas*/
+.navbar-bg-color{
+    background-color: white;
+}
 
 .overlay {
   height: 100%;
   width: 0;
   position: fixed;
-  /*-index: 1;*/
   top: 0;
   left: 0;
   background-color: rgb(0,0,0);

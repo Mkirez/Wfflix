@@ -24,15 +24,31 @@ class Router
     {
         $method = $_SERVER['REQUEST_METHOD'];
         $uri = $_SERVER['REQUEST_URI'];
+
         $uri = explode("?", $uri)[0];
+
+        if(isset(explode("/", $uri)[1])){
+            if(explode("/", $uri)[1] == "admin"){
+                if(!isset($_SESSION["ADMIN_USER"])){
+                    if(isset(explode("/", $uri)[2])){
+                        if(explode("/", $uri)[2] != "login") {
+                            header("location:/admin/login");exit;
+                        }
+                    }else{
+                        header("location:/admin/login");exit;
+                    }
+                }
+            }
+        }
+
         if (array_key_exists($uri, $this->routes[$method])) {
             $currentRoute = $this->routes[$method][$uri];
             $controller = new $currentRoute['controller']();
             $controller->{$currentRoute['method']}();
             return;
+        }else{
+            require "views/errors/404.view.php";
         }
-
-        throw new Exception('Route not defined!');
     }
 }
 

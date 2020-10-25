@@ -37,6 +37,20 @@ class UserModel extends BaseModel
         endif;
     }
 
+    public function fetchById($id)
+    {
+        $query = "SELECT * FROM gebruikers WHERE id = :id";
+        if ($stmt = $this->pdo->prepare($query)) :
+            $stmt->bindParam('id', $id, PDO::PARAM_INT);
+            $stmt->execute();
+            $data = $stmt->fetch();
+            if($data !== false) :
+                $this->load($data);
+                return $this;
+            endif;
+        endif;
+    }
+
     public function find($id)
     {
         $query = "SELECT * FROM gebruikers WHERE id = :id";

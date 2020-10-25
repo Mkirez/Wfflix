@@ -22,6 +22,23 @@ class WatchModel extends BaseModel
         }
     }
 
+    public function fetchTotalWatchedByUserId($userId)
+    {
+        $query = "SELECT * FROM watch where user_id = :user_id";
+        $stmt = $this->pdo->prepare($query);
+        $stmt->bindParam(':user_id',$userId,PDO::PARAM_INT);
+        $stmt->execute();
+        return $stmt->rowCount();
+    }
+
+    public function fetchTotalWatchedByVideoId($video_id)
+    {
+        $query = "SELECT * FROM watch where video_id = :video_id";
+        $stmt = $this->pdo->prepare($query);
+        $stmt->bindParam('video_id',$video_id,PDO::PARAM_INT);
+        $stmt->execute();
+        return $stmt->rowCount();
+    }
 
     public function insertWatch($videoId,$userId)
     {

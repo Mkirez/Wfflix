@@ -109,17 +109,17 @@ class videoModel extends BaseModel
     public function updateVideo(VideoModel $video)
     {
         $query = "UPDATE video SET 
-                    videoName = :naam_video, 
+                    naam_video = :naam_video, 
                     videobeschrijving = :videobeschrijving, 
                     image = :image,
-                    video = :video,
-                    WHERE id = :id";
+                    video = :video
+                    WHERE videoID = :id";
         if ($stmt = $this->pdo->prepare($query)) :
-            $stmt->bindValue(':videoID', $video->getId(), PDO::PARAM_INT);
-            $stmt->bindValue(':naam_video', $video->getvideoName());
-            $stmt->bindValue(':videobeschrijving', $video->getBeschrijving());
-            $stmt->bindValue(':image', $video->getImage());
-            $stmt->bindValue(':video', $video->getVideo());
+            $stmt->bindValue('id', $video->getId(), PDO::PARAM_INT);
+            $stmt->bindValue('naam_video', $video->getvideoName());
+            $stmt->bindValue('videobeschrijving', $video->getBeschrijving());
+            $stmt->bindValue('video', $video->getVideo());
+            $stmt->bindValue('image', $video->getImage());
             return $stmt->execute();
         endif;
         return false;
@@ -127,9 +127,9 @@ class videoModel extends BaseModel
 
     public function store(videoModel $video)
     {
-        $query = "INSERT INTO video (videoName, videobeschrijving, image, video) VALUES (:videoName, :videobeschrijving, :image, :video)";
+        $query = "INSERT INTO video (naam_video, videobeschrijving, image, video) VALUES (:videoName, :videobeschrijving, :image, :video)";
         if ($stmt = $this->pdo->prepare($query)) :
-            $stmt->bindValue(':naam_video', $video->getvideoName());
+            $stmt->bindValue(':videoName', $video->getvideoName());
             $stmt->bindValue(':videobeschrijving', $video->getBeschrijving());
             $stmt->bindValue(':image', $video->getImage());
             $stmt->bindValue(':video', $video->getVideo());
