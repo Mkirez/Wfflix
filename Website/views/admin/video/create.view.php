@@ -48,7 +48,17 @@
 <?php include  __DIR__ . "/../includes/footer.view.php" ?>
 <script>
     $(document).ready(function() {
-        $('#summernote').summernote();
+        $('#summernote').summernote({
+            toolbar: [
+                ['style', ['style']],
+                ['font', ['bold', 'italic', 'underline', 'clear']],
+                ['fontsize', ['fontsize']],
+                ['color', ['color']],
+                ['para', ['ul', 'ol', 'paragraph']],
+                ['height', ['height']],
+                ['help', ['help']]
+            ],
+        });
     });
 </script>
 </body>

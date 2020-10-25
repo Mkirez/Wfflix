@@ -8,7 +8,7 @@
 
 <section id="page-title">
     <div class="container clearfix">
-        <h1 class="float-left">Toevoegen Video</h1>
+        <h1 class="float-left">Wijzigen Video</h1>
     </div>
 </section>
 <section class="container">
@@ -51,7 +51,17 @@
 <?php include  __DIR__ . "/../includes/footer.view.php" ?>
 <script>
     $(document).ready(function() {
-        $('#summernote').summernote();
+        $('#summernote').summernote({
+            toolbar: [
+                ['style', ['style']],
+                ['font', ['bold', 'italic', 'underline', 'clear']],
+                ['fontsize', ['fontsize']],
+                ['color', ['color']],
+                ['para', ['ul', 'ol', 'paragraph']],
+                ['height', ['height']],
+                ['help', ['help']]
+            ],
+        });
     });
 </script>
 
