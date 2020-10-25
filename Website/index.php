@@ -14,7 +14,7 @@ require "core/config.php";
 require 'models/BaseModel.php';
 require 'models/UserModel.php';
 require 'models/videoModel.php';
-
+require 'models/WatchModel.php';
 
 
 
